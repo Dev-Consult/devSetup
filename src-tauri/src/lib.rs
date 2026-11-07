@@ -91,6 +91,11 @@ fn prune_tools() -> Result<String, String> {
 }
 
 #[tauri::command]
+fn audit_env_template(workspace: Option<String>) -> Result<models::EnvAuditReport, String> {
+    MiseCli::audit_env_template(workspace.as_deref())
+}
+
+#[tauri::command]
 fn install_tool(
     tool: String,
     version: String,
@@ -146,6 +151,7 @@ pub fn run() {
             save_config,
             uninstall_tool,
             prune_tools,
+            audit_env_template,
             install_tool
         ])
         .run(tauri::generate_context!())

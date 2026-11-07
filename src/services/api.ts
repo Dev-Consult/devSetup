@@ -1,4 +1,5 @@
 // API Client: Dual-mode (Tauri IPC when inside desktop app, realistic dev bridge in browser)
+import fullRegistry from "../data/registry.json";
 
 export interface ToolVersionInfo {
 	version: string;
@@ -67,6 +68,20 @@ export interface ConfigFileInfo {
 	path: string;
 	exists: boolean;
 	content: string;
+}
+
+export interface EnvAuditItem {
+	key: string;
+	is_set: boolean;
+	is_empty: boolean;
+	default_value?: string;
+}
+
+export interface EnvAuditReport {
+	example_file_found: boolean;
+	example_file_path?: string;
+	items: EnvAuditItem[];
+	missing_count: number;
 }
 
 const isTauri = () =>
@@ -149,152 +164,7 @@ async function mockInvoke<T>(
 	}
 
 	if (cmd === "get_registry") {
-		return [
-			{
-				name: "node",
-				full_name: "core:node",
-				backend: "core",
-				description: "Node.js JavaScript runtime",
-			},
-			{
-				name: "python",
-				full_name: "core:python",
-				backend: "core",
-				description: "Python programming language",
-			},
-			{
-				name: "go",
-				full_name: "core:go",
-				backend: "core",
-				description: "Go programming language",
-			},
-			{
-				name: "rust",
-				full_name: "core:rust",
-				backend: "core",
-				description: "Rust compiler and toolchain",
-			},
-			{
-				name: "bun",
-				full_name: "core:bun",
-				backend: "core",
-				description: "Fast all-in-one JavaScript runtime & package manager",
-			},
-			{
-				name: "deno",
-				full_name: "core:deno",
-				backend: "core",
-				description: "Secure runtime for JavaScript and TypeScript",
-			},
-			{
-				name: "ruby",
-				full_name: "core:ruby",
-				backend: "core",
-				description: "Dynamic open source programming language",
-			},
-			{
-				name: "java",
-				full_name: "core:java",
-				backend: "core",
-				description: "Java Development Kit (OpenJDK)",
-			},
-			{
-				name: "zig",
-				full_name: "core:zig",
-				backend: "core",
-				description: "General-purpose programming language and toolchain",
-			},
-			{
-				name: "terraform",
-				full_name: "aqua:hashicorp/terraform",
-				backend: "aqua",
-				description: "Infrastructure as Code tool for cloud provisioning",
-			},
-			{
-				name: "kubectl",
-				full_name: "aqua:kubernetes/kubernetes/kubectl",
-				backend: "aqua",
-				description: "Kubernetes command-line tool",
-			},
-			{
-				name: "helm",
-				full_name: "aqua:helm/helm",
-				backend: "aqua",
-				description: "The package manager for Kubernetes",
-			},
-			{
-				name: "k9s",
-				full_name: "aqua:derailed/k9s",
-				backend: "aqua",
-				description: "Terminal UI to monitor and manage Kubernetes clusters",
-			},
-			{
-				name: "gh",
-				full_name: "aqua:cli/cli",
-				backend: "aqua",
-				description: "GitHub's official command line tool",
-			},
-			{
-				name: "aws-cli",
-				full_name: "aqua:aws/aws-cli",
-				backend: "aqua",
-				description: "Official AWS command line interface",
-			},
-			{
-				name: "uv",
-				full_name: "aqua:astral-sh/uv",
-				backend: "aqua",
-				description: "Extremely fast Python package installer and resolver",
-			},
-			{
-				name: "ripgrep",
-				full_name: "aqua:BurntSushi/ripgrep",
-				backend: "aqua",
-				description: "Fast line-oriented search tool",
-			},
-			{
-				name: "fzf",
-				full_name: "aqua:junegunn/fzf",
-				backend: "aqua",
-				description: "Command-line fuzzy finder",
-			},
-			{
-				name: "jq",
-				full_name: "aqua:jqlang/jq",
-				backend: "aqua",
-				description: "Command-line JSON processor",
-			},
-			{
-				name: "bat",
-				full_name: "aqua:sharkdp/bat",
-				backend: "aqua",
-				description: "Cat clone with syntax highlighting and Git integration",
-			},
-			{
-				name: "pre-commit",
-				full_name: "aqua:pre-commit/pre-commit",
-				backend: "aqua",
-				description: "Multi-language pre-commit hooks manager",
-			},
-			{
-				name: "tflint",
-				full_name: "aqua:terraform-linters/tflint",
-				backend: "aqua",
-				description: "A Pluggable Terraform Linter",
-			},
-			{
-				name: "eza",
-				full_name: "cargo:eza",
-				backend: "cargo",
-				description: "Modern, maintained replacement for ls",
-			},
-			{
-				name: "starship",
-				full_name: "aqua:starship/starship",
-				backend: "aqua",
-				description: "Cross-shell customizable prompt",
-			},
-		] as unknown as T;
+		return fullRegistry as unknown as T;
 	}
 
 	if (cmd === "get_presets") {
@@ -460,6 +330,39 @@ ARTIFACTORY_USER = "daniel"
 		return `Saved to ${args.file_path}` as unknown as T;
 	}
 
+	if (cmd === "audit_env_template") {
+		const isProject = args.workspace !== undefined;
+		return {
+			example_file_found: isProject,
+			example_file_path: isProject
+				? "/home/daniel/dev/mise-gui/.env.example"
+				: undefined,
+			items: isProject
+				? [
+						{
+							key: "DATABASE_URL",
+							is_set: false,
+							is_empty: true,
+							default_value: "postgres://user:pass@localhost:5432/app",
+						},
+						{
+							key: "API_SECRET_KEY",
+							is_set: false,
+							is_empty: true,
+							default_value: "change-me-in-local",
+						},
+						{
+							key: "PORT",
+							is_set: true,
+							is_empty: false,
+							default_value: "3000",
+						},
+					]
+				: [],
+			missing_count: isProject ? 2 : 0,
+		} as unknown as T;
+	}
+
 	if (cmd === "apply_preset") {
 		return "Preset applied to .mise.local.toml safely!" as unknown as T;
 	}
@@ -494,6 +397,8 @@ export const api = {
 		invokeTauri<ConfigFileInfo[]>("get_config_files", { workspace }),
 	saveConfig: (filePath: string, content: string) =>
 		invokeTauri<string>("save_config", { filePath, content }),
+	auditEnvTemplate: (workspace?: string) =>
+		invokeTauri<EnvAuditReport>("audit_env_template", { workspace }),
 	applyPreset: (preset: RegistryPreset, workspace?: string, token?: string) =>
 		invokeTauri<string>("apply_preset", { preset, workspace, token }),
 	installTool: (tool: string, version: string, workspace?: string) =>

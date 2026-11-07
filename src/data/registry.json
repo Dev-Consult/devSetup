@@ -1,0 +1,4707 @@
+[
+  {
+    "name": "1password",
+    "full_name": "vfox:mise-plugins/vfox-1password",
+    "backend": "vfox"
+  },
+  {
+    "name": "1password-cli",
+    "full_name": "vfox:mise-plugins/vfox-1password",
+    "backend": "vfox"
+  },
+  {
+    "name": "aapt2",
+    "full_name": "vfox:mise-plugins/vfox-aapt2",
+    "backend": "vfox"
+  },
+  {
+    "name": "act",
+    "full_name": "aqua:nektos/act",
+    "backend": "aqua"
+  },
+  {
+    "name": "action-validator",
+    "full_name": "aqua:mpalmer/action-validator",
+    "backend": "aqua"
+  },
+  {
+    "name": "actionlint",
+    "full_name": "aqua:rhysd/actionlint",
+    "backend": "aqua"
+  },
+  {
+    "name": "adr-tools",
+    "full_name": "aqua:npryce/adr-tools",
+    "backend": "aqua"
+  },
+  {
+    "name": "ag",
+    "full_name": "vfox:mise-plugins/vfox-ag",
+    "backend": "vfox"
+  },
+  {
+    "name": "age",
+    "full_name": "aqua:FiloSottile/age",
+    "backend": "aqua"
+  },
+  {
+    "name": "age-plugin-yubikey",
+    "full_name": "github:str4d/age-plugin-yubikey",
+    "backend": "github"
+  },
+  {
+    "name": "agebox",
+    "full_name": "aqua:slok/agebox",
+    "backend": "aqua"
+  },
+  {
+    "name": "aichat",
+    "full_name": "aqua:sigoden/aichat",
+    "backend": "aqua"
+  },
+  {
+    "name": "air",
+    "full_name": "aqua:air-verse/air",
+    "backend": "aqua"
+  },
+  {
+    "name": "aks-engine",
+    "full_name": "aqua:Azure/aks-engine",
+    "backend": "aqua"
+  },
+  {
+    "name": "allure",
+    "full_name": "github:allure-framework/allure2",
+    "backend": "github"
+  },
+  {
+    "name": "allurectl",
+    "full_name": "github:allure-framework/allurectl",
+    "backend": "github"
+  },
+  {
+    "name": "alp",
+    "full_name": "aqua:tkuchiki/alp",
+    "backend": "aqua"
+  },
+  {
+    "name": "amass",
+    "full_name": "github:owasp-amass/amass",
+    "backend": "github"
+  },
+  {
+    "name": "amazon-ecr-credential-helper",
+    "full_name": "aqua:awslabs/amazon-ecr-credential-helper",
+    "backend": "aqua"
+  },
+  {
+    "name": "amazon-ecs-cli",
+    "full_name": "aqua:aws/amazon-ecs-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "amp",
+    "full_name": "npm:@sourcegraph/amp",
+    "backend": "npm"
+  },
+  {
+    "name": "amplify",
+    "full_name": "github:aws-amplify/amplify-cli[rename_exe=amplify]",
+    "backend": "github"
+  },
+  {
+    "name": "android-sdk",
+    "full_name": "vfox:mise-plugins/vfox-android-sdk",
+    "backend": "vfox"
+  },
+  {
+    "name": "ansible",
+    "full_name": "pipx:ansible[uvx=false,pipx_args=--include-deps]",
+    "backend": "pipx"
+  },
+  {
+    "name": "ansible-base",
+    "full_name": "pipx:ansible-core",
+    "backend": "pipx"
+  },
+  {
+    "name": "ansible-core",
+    "full_name": "pipx:ansible-core",
+    "backend": "pipx"
+  },
+  {
+    "name": "ant",
+    "full_name": "vfox:mise-plugins/vfox-ant",
+    "backend": "vfox"
+  },
+  {
+    "name": "apko",
+    "full_name": "aqua:chainguard-dev/apko",
+    "backend": "aqua"
+  },
+  {
+    "name": "apollo-ios",
+    "full_name": "github:apollographql/apollo-ios",
+    "backend": "github"
+  },
+  {
+    "name": "apollo-ios-cli",
+    "full_name": "github:apollographql/apollo-ios",
+    "backend": "github"
+  },
+  {
+    "name": "apollo-router",
+    "full_name": "github:apollographql/router",
+    "backend": "github"
+  },
+  {
+    "name": "apollo-rover",
+    "full_name": "github:apollographql/rover",
+    "backend": "github"
+  },
+  {
+    "name": "aqua",
+    "full_name": "github:aquaproj/aqua",
+    "backend": "github"
+  },
+  {
+    "name": "arduino",
+    "full_name": "aqua:arduino/arduino-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "arduino-cli",
+    "full_name": "aqua:arduino/arduino-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "argc",
+    "full_name": "github:sigoden/argc",
+    "backend": "github"
+  },
+  {
+    "name": "argo",
+    "full_name": "aqua:argoproj/argo-workflows",
+    "backend": "aqua"
+  },
+  {
+    "name": "argo-rollouts",
+    "full_name": "aqua:argoproj/argo-rollouts",
+    "backend": "aqua"
+  },
+  {
+    "name": "argocd",
+    "full_name": "aqua:argoproj/argo-cd",
+    "backend": "aqua"
+  },
+  {
+    "name": "asciidoctorj",
+    "full_name": "vfox:mise-plugins/vfox-asciidoctorj",
+    "backend": "vfox"
+  },
+  {
+    "name": "assh",
+    "full_name": "github:moul/assh",
+    "backend": "github"
+  },
+  {
+    "name": "ast-grep",
+    "full_name": "aqua:ast-grep/ast-grep",
+    "backend": "aqua"
+  },
+  {
+    "name": "astro",
+    "full_name": "github:astronomer/astro-cli[exe=astro]",
+    "backend": "github"
+  },
+  {
+    "name": "atlas",
+    "full_name": "aqua:ariga/atlas",
+    "backend": "aqua"
+  },
+  {
+    "name": "atlas-community",
+    "full_name": "aqua:ariga/atlas/community",
+    "backend": "aqua"
+  },
+  {
+    "name": "atmos",
+    "full_name": "aqua:cloudposse/atmos",
+    "backend": "aqua"
+  },
+  {
+    "name": "atuin",
+    "full_name": "aqua:atuinsh/atuin",
+    "backend": "aqua"
+  },
+  {
+    "name": "auto-doc",
+    "full_name": "github:tj-actions/auto-doc",
+    "backend": "github"
+  },
+  {
+    "name": "aws",
+    "full_name": "aqua:aws/aws-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "aws-amplify",
+    "full_name": "github:aws-amplify/amplify-cli[rename_exe=amplify]",
+    "backend": "github"
+  },
+  {
+    "name": "aws-cli",
+    "full_name": "aqua:aws/aws-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "aws-copilot",
+    "full_name": "aqua:aws/copilot-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "aws-iam-authenticator",
+    "full_name": "aqua:kubernetes-sigs/aws-iam-authenticator",
+    "backend": "aqua"
+  },
+  {
+    "name": "aws-nuke",
+    "full_name": "aqua:ekristen/aws-nuke",
+    "backend": "aqua"
+  },
+  {
+    "name": "aws-sam",
+    "full_name": "aqua:aws/aws-sam-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "aws-sam-cli",
+    "full_name": "aqua:aws/aws-sam-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "aws-sso",
+    "full_name": "aqua:synfinatic/aws-sso-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "aws-vault",
+    "full_name": "aqua:ByteNess/aws-vault",
+    "backend": "aqua"
+  },
+  {
+    "name": "awscli",
+    "full_name": "aqua:aws/aws-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "awscli-local",
+    "full_name": "pipx:awscli-local",
+    "backend": "pipx"
+  },
+  {
+    "name": "awsebcli",
+    "full_name": "pipx:awsebcli",
+    "backend": "pipx"
+  },
+  {
+    "name": "awsls",
+    "full_name": "github:jckuester/awsls",
+    "backend": "github"
+  },
+  {
+    "name": "awsrm",
+    "full_name": "github:jckuester/awsrm",
+    "backend": "github"
+  },
+  {
+    "name": "awsweeper",
+    "full_name": "github:jckuester/awsweeper",
+    "backend": "github"
+  },
+  {
+    "name": "azure",
+    "full_name": "pipx:azure-cli[uvx_args=--prerelease=allow]",
+    "backend": "pipx"
+  },
+  {
+    "name": "azure-cli",
+    "full_name": "pipx:azure-cli[uvx_args=--prerelease=allow]",
+    "backend": "pipx"
+  },
+  {
+    "name": "azure-functions-core-tools",
+    "full_name": "vfox:mise-plugins/vfox-azure-functions-core-tools",
+    "backend": "vfox"
+  },
+  {
+    "name": "azure-kubelogin",
+    "full_name": "aqua:Azure/kubelogin",
+    "backend": "aqua"
+  },
+  {
+    "name": "babashka",
+    "full_name": "github:babashka/babashka[exe=bb]",
+    "backend": "github"
+  },
+  {
+    "name": "balena",
+    "full_name": "github:balena-io/balena-cli",
+    "backend": "github"
+  },
+  {
+    "name": "balena-cli",
+    "full_name": "github:balena-io/balena-cli",
+    "backend": "github"
+  },
+  {
+    "name": "bashbot",
+    "full_name": "aqua:mathew-fleisch/bashbot",
+    "backend": "aqua"
+  },
+  {
+    "name": "bashly",
+    "full_name": "gem:bashly",
+    "backend": "gem"
+  },
+  {
+    "name": "bat",
+    "full_name": "aqua:sharkdp/bat",
+    "backend": "aqua"
+  },
+  {
+    "name": "bat-extras",
+    "full_name": "aqua:eth-p/bat-extras",
+    "backend": "aqua"
+  },
+  {
+    "name": "bats",
+    "full_name": "aqua:bats-core/bats-core",
+    "backend": "aqua"
+  },
+  {
+    "name": "bazel",
+    "full_name": "aqua:bazelbuild/bazel",
+    "backend": "aqua"
+  },
+  {
+    "name": "bazel-watcher",
+    "full_name": "aqua:bazelbuild/bazel-watcher",
+    "backend": "aqua"
+  },
+  {
+    "name": "bazelisk",
+    "full_name": "aqua:bazelbuild/bazelisk",
+    "backend": "aqua"
+  },
+  {
+    "name": "bbr",
+    "full_name": "github:cloudfoundry-incubator/bosh-backup-and-restore[bin=bosh-backup-and-restore,asset_pattern=bbr-*-{darwin_os}-{amd64_arch}]",
+    "backend": "github"
+  },
+  {
+    "name": "benthos",
+    "full_name": "aqua:redpanda-data/connect",
+    "backend": "aqua"
+  },
+  {
+    "name": "bfs",
+    "full_name": "vfox:mise-plugins/vfox-bfs",
+    "backend": "vfox"
+  },
+  {
+    "name": "bibtex-tidy",
+    "full_name": "npm:bibtex-tidy",
+    "backend": "npm"
+  },
+  {
+    "name": "binnacle",
+    "full_name": "aqua:Traackr/binnacle",
+    "backend": "aqua"
+  },
+  {
+    "name": "biome",
+    "full_name": "aqua:biomejs/biome",
+    "backend": "aqua"
+  },
+  {
+    "name": "bitwarden",
+    "full_name": "aqua:bitwarden/clients",
+    "backend": "aqua"
+  },
+  {
+    "name": "bitwarden-secrets-manager",
+    "full_name": "github:bitwarden/sdk[version_prefix=bws-v]",
+    "backend": "github"
+  },
+  {
+    "name": "black",
+    "full_name": "aqua:psf/black",
+    "backend": "aqua"
+  },
+  {
+    "name": "blender",
+    "full_name": "aqua:blender/blender",
+    "backend": "aqua"
+  },
+  {
+    "name": "bob",
+    "full_name": "aqua:MordechaiHadad/bob",
+    "backend": "aqua"
+  },
+  {
+    "name": "boilerplate",
+    "full_name": "aqua:gruntwork-io/boilerplate",
+    "backend": "aqua"
+  },
+  {
+    "name": "bombardier",
+    "full_name": "aqua:codesenberg/bombardier",
+    "backend": "aqua"
+  },
+  {
+    "name": "borg",
+    "full_name": "aqua:borgbackup/borg",
+    "backend": "aqua"
+  },
+  {
+    "name": "bosh",
+    "full_name": "aqua:cloudfoundry/bosh-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "bosh-backup-and-restore",
+    "full_name": "github:cloudfoundry-incubator/bosh-backup-and-restore[bin=bosh-backup-and-restore,asset_pattern=bbr-*-{darwin_os}-{amd64_arch}]",
+    "backend": "github"
+  },
+  {
+    "name": "bottom",
+    "full_name": "aqua:ClementTsang/bottom",
+    "backend": "aqua"
+  },
+  {
+    "name": "boundary",
+    "full_name": "aqua:hashicorp/boundary",
+    "backend": "aqua"
+  },
+  {
+    "name": "bpkg",
+    "full_name": "vfox:mise-plugins/vfox-bpkg",
+    "backend": "vfox"
+  },
+  {
+    "name": "brig",
+    "full_name": "aqua:brigadecore/brigade",
+    "backend": "aqua"
+  },
+  {
+    "name": "btop",
+    "full_name": "aqua:aristocratos/btop",
+    "backend": "aqua"
+  },
+  {
+    "name": "btrace",
+    "full_name": "github:btraceio/btrace",
+    "backend": "github"
+  },
+  {
+    "name": "buck2",
+    "full_name": "github:facebook/buck2[bin=buck2]",
+    "backend": "github"
+  },
+  {
+    "name": "buf",
+    "full_name": "aqua:bufbuild/buf",
+    "backend": "aqua"
+  },
+  {
+    "name": "buildifier",
+    "full_name": "aqua:bazelbuild/buildtools/buildifier",
+    "backend": "aqua"
+  },
+  {
+    "name": "buildpack",
+    "full_name": "aqua:buildpacks/pack",
+    "backend": "aqua"
+  },
+  {
+    "name": "buildpacks",
+    "full_name": "aqua:buildpacks/pack",
+    "backend": "aqua"
+  },
+  {
+    "name": "bun",
+    "full_name": "core:bun",
+    "backend": "core"
+  },
+  {
+    "name": "cabal",
+    "full_name": "aqua:haskell/cabal/cabal-install",
+    "backend": "aqua"
+  },
+  {
+    "name": "caddy",
+    "full_name": "aqua:caddyserver/caddy",
+    "backend": "aqua"
+  },
+  {
+    "name": "calendarsync",
+    "full_name": "aqua:inovex/CalendarSync",
+    "backend": "aqua"
+  },
+  {
+    "name": "calicoctl",
+    "full_name": "aqua:projectcalico/calico/calicoctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "carapace",
+    "full_name": "aqua:carapace-sh/carapace-bin",
+    "backend": "aqua"
+  },
+  {
+    "name": "cargo-binstall",
+    "full_name": "aqua:cargo-bins/cargo-binstall",
+    "backend": "aqua"
+  },
+  {
+    "name": "cargo-insta",
+    "full_name": "aqua:mitsuhiko/insta",
+    "backend": "aqua"
+  },
+  {
+    "name": "cargo-make",
+    "full_name": "aqua:sagiegurari/cargo-make",
+    "backend": "aqua"
+  },
+  {
+    "name": "carp",
+    "full_name": "github:carp-lang/Carp[exe=carp]",
+    "backend": "github"
+  },
+  {
+    "name": "carthage",
+    "full_name": "vfox:mise-plugins/vfox-carthage",
+    "backend": "vfox"
+  },
+  {
+    "name": "ccache",
+    "full_name": "github:ccache/ccache",
+    "backend": "github"
+  },
+  {
+    "name": "certstrap",
+    "full_name": "github:square/certstrap",
+    "backend": "github"
+  },
+  {
+    "name": "cf",
+    "full_name": "github:cloudfoundry/cli",
+    "backend": "github"
+  },
+  {
+    "name": "cfn-lint",
+    "full_name": "pipx:cfn-lint",
+    "backend": "pipx"
+  },
+  {
+    "name": "cfssl",
+    "full_name": "aqua:cloudflare/cfssl/cfssl",
+    "backend": "aqua"
+  },
+  {
+    "name": "cfssljson",
+    "full_name": "aqua:cloudflare/cfssl/cfssljson",
+    "backend": "aqua"
+  },
+  {
+    "name": "chamber",
+    "full_name": "aqua:segmentio/chamber",
+    "backend": "aqua"
+  },
+  {
+    "name": "changie",
+    "full_name": "aqua:miniscruff/changie",
+    "backend": "aqua"
+  },
+  {
+    "name": "cheat",
+    "full_name": "aqua:cheat/cheat",
+    "backend": "aqua"
+  },
+  {
+    "name": "checkmake",
+    "full_name": "aqua:mrtazz/checkmake",
+    "backend": "aqua"
+  },
+  {
+    "name": "checkov",
+    "full_name": "aqua:bridgecrewio/checkov",
+    "backend": "aqua"
+  },
+  {
+    "name": "chezmoi",
+    "full_name": "aqua:twpayne/chezmoi",
+    "backend": "aqua"
+  },
+  {
+    "name": "chezscheme",
+    "full_name": "vfox:mise-plugins/vfox-chezscheme",
+    "backend": "vfox"
+  },
+  {
+    "name": "chicken",
+    "full_name": "vfox:mise-plugins/vfox-chicken",
+    "backend": "vfox"
+  },
+  {
+    "name": "chisel",
+    "full_name": "aqua:jpillora/chisel",
+    "backend": "aqua"
+  },
+  {
+    "name": "choose",
+    "full_name": "aqua:theryangeary/choose",
+    "backend": "aqua"
+  },
+  {
+    "name": "chromedriver",
+    "full_name": "vfox:mise-plugins/vfox-chromedriver",
+    "backend": "vfox"
+  },
+  {
+    "name": "cidr-merger",
+    "full_name": "github:zhanhb/cidr-merger",
+    "backend": "github"
+  },
+  {
+    "name": "cidrchk",
+    "full_name": "github:mhausenblas/cidrchk",
+    "backend": "github"
+  },
+  {
+    "name": "cilium-cli",
+    "full_name": "aqua:cilium/cilium-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "cilium-hubble",
+    "full_name": "github:cilium/hubble",
+    "backend": "github"
+  },
+  {
+    "name": "circleci",
+    "full_name": "aqua:CircleCI-Public/circleci-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "circleci-cli",
+    "full_name": "aqua:CircleCI-Public/circleci-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "clang",
+    "full_name": "asdf:mise-plugins/mise-llvm",
+    "backend": "asdf"
+  },
+  {
+    "name": "clang-format",
+    "full_name": "asdf:mise-plugins/mise-llvm",
+    "backend": "asdf"
+  },
+  {
+    "name": "clarinet",
+    "full_name": "github:hirosystems/clarinet",
+    "backend": "github"
+  },
+  {
+    "name": "claude",
+    "full_name": "http:claude",
+    "backend": "http"
+  },
+  {
+    "name": "claude-code",
+    "full_name": "http:claude",
+    "backend": "http"
+  },
+  {
+    "name": "claude-squad",
+    "full_name": "aqua:smtg-ai/claude-squad",
+    "backend": "aqua"
+  },
+  {
+    "name": "cli53",
+    "full_name": "aqua:barnybug/cli53",
+    "backend": "aqua"
+  },
+  {
+    "name": "clickhouse",
+    "full_name": "vfox:mise-plugins/vfox-clickhouse",
+    "backend": "vfox"
+  },
+  {
+    "name": "clj-kondo",
+    "full_name": "github:clj-kondo/clj-kondo",
+    "backend": "github"
+  },
+  {
+    "name": "cljstyle",
+    "full_name": "github:greglook/cljstyle",
+    "backend": "github"
+  },
+  {
+    "name": "clojure",
+    "full_name": "asdf:mise-plugins/mise-clojure",
+    "backend": "asdf"
+  },
+  {
+    "name": "cloud-sql-proxy",
+    "full_name": "aqua:GoogleCloudPlatform/cloud-sql-proxy",
+    "backend": "aqua"
+  },
+  {
+    "name": "cloudflared",
+    "full_name": "aqua:cloudflare/cloudflared",
+    "backend": "aqua"
+  },
+  {
+    "name": "clusterawsadm",
+    "full_name": "github:kubernetes-sigs/cluster-api-provider-aws[bin=cluster-api-provider-aws,asset_pattern=clusterawsadm-{darwin_os}-{amd64_arch}]",
+    "backend": "github"
+  },
+  {
+    "name": "clusterctl",
+    "full_name": "aqua:kubernetes-sigs/cluster-api",
+    "backend": "aqua"
+  },
+  {
+    "name": "cmake",
+    "full_name": "aqua:Kitware/CMake",
+    "backend": "aqua"
+  },
+  {
+    "name": "cmctl",
+    "full_name": "aqua:cert-manager/cmctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "cmdx",
+    "full_name": "aqua:suzuki-shunsuke/cmdx",
+    "backend": "aqua"
+  },
+  {
+    "name": "cockroach",
+    "full_name": "aqua:cockroachdb/cockroach",
+    "backend": "aqua"
+  },
+  {
+    "name": "cocoapods",
+    "full_name": "gem:cocoapods",
+    "backend": "gem"
+  },
+  {
+    "name": "cocogitto",
+    "full_name": "aqua:cocogitto/cocogitto",
+    "backend": "aqua"
+  },
+  {
+    "name": "code",
+    "full_name": "aqua:just-every/code",
+    "backend": "aqua"
+  },
+  {
+    "name": "codebuff",
+    "full_name": "npm:codebuff",
+    "backend": "npm"
+  },
+  {
+    "name": "codefresh",
+    "full_name": "github:codefresh-io/cli[exe=codefresh]",
+    "backend": "github"
+  },
+  {
+    "name": "codeql",
+    "full_name": "github:github/codeql-cli-binaries[bin_path=codeql]",
+    "backend": "github"
+  },
+  {
+    "name": "coder",
+    "full_name": "aqua:coder/coder",
+    "backend": "aqua"
+  },
+  {
+    "name": "codex",
+    "full_name": "aqua:openai/codex",
+    "backend": "aqua"
+  },
+  {
+    "name": "colima",
+    "full_name": "aqua:abiosoft/colima",
+    "backend": "aqua"
+  },
+  {
+    "name": "committed",
+    "full_name": "aqua:crate-ci/committed",
+    "backend": "aqua"
+  },
+  {
+    "name": "conan",
+    "full_name": "pipx:conan",
+    "backend": "pipx"
+  },
+  {
+    "name": "concourse",
+    "full_name": "aqua:concourse/concourse/concourse",
+    "backend": "aqua"
+  },
+  {
+    "name": "conduit",
+    "full_name": "github:ConduitIO/conduit",
+    "backend": "github"
+  },
+  {
+    "name": "conform",
+    "full_name": "aqua:siderolabs/conform",
+    "backend": "aqua"
+  },
+  {
+    "name": "conftest",
+    "full_name": "aqua:open-policy-agent/conftest",
+    "backend": "aqua"
+  },
+  {
+    "name": "consul",
+    "full_name": "aqua:hashicorp/consul",
+    "backend": "aqua"
+  },
+  {
+    "name": "container",
+    "full_name": "aqua:apple/container",
+    "backend": "aqua"
+  },
+  {
+    "name": "container-structure-test",
+    "full_name": "aqua:GoogleContainerTools/container-structure-test",
+    "backend": "aqua"
+  },
+  {
+    "name": "container-use",
+    "full_name": "aqua:dagger/container-use",
+    "backend": "aqua"
+  },
+  {
+    "name": "cookiecutter",
+    "full_name": "pipx:cookiecutter",
+    "backend": "pipx"
+  },
+  {
+    "name": "copier",
+    "full_name": "pipx:copier",
+    "backend": "pipx"
+  },
+  {
+    "name": "copper",
+    "full_name": "aqua:cloud66-oss/copper",
+    "backend": "aqua"
+  },
+  {
+    "name": "coredns",
+    "full_name": "github:coredns/coredns",
+    "backend": "github"
+  },
+  {
+    "name": "coreutils",
+    "full_name": "aqua:uutils/coreutils",
+    "backend": "aqua"
+  },
+  {
+    "name": "cosign",
+    "full_name": "aqua:sigstore/cosign",
+    "backend": "aqua"
+  },
+  {
+    "name": "coursier",
+    "full_name": "github:coursier/coursier[exe=cs]",
+    "backend": "github"
+  },
+  {
+    "name": "cowsay",
+    "full_name": "npm:cowsay",
+    "backend": "npm"
+  },
+  {
+    "name": "cpz",
+    "full_name": "aqua:SUPERCILEX/fuc/cpz",
+    "backend": "aqua"
+  },
+  {
+    "name": "crane",
+    "full_name": "aqua:google/go-containerregistry",
+    "backend": "aqua"
+  },
+  {
+    "name": "credhub",
+    "full_name": "aqua:cloudfoundry/credhub-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "crictl",
+    "full_name": "aqua:kubernetes-sigs/cri-tools/crictl",
+    "backend": "aqua"
+  },
+  {
+    "name": "croc",
+    "full_name": "aqua:schollz/croc",
+    "backend": "aqua"
+  },
+  {
+    "name": "crossplane",
+    "full_name": "aqua:crossplane/crossplane",
+    "backend": "aqua"
+  },
+  {
+    "name": "crossplane-cli",
+    "full_name": "aqua:crossplane/crossplane",
+    "backend": "aqua"
+  },
+  {
+    "name": "crush",
+    "full_name": "aqua:charmbracelet/crush",
+    "backend": "aqua"
+  },
+  {
+    "name": "crystal",
+    "full_name": "github:crystal-lang/crystal",
+    "backend": "github"
+  },
+  {
+    "name": "cspell",
+    "full_name": "npm:cspell",
+    "backend": "npm"
+  },
+  {
+    "name": "ctlptl",
+    "full_name": "aqua:tilt-dev/ctlptl",
+    "backend": "aqua"
+  },
+  {
+    "name": "ctop",
+    "full_name": "aqua:bcicen/ctop",
+    "backend": "aqua"
+  },
+  {
+    "name": "cue",
+    "full_name": "aqua:cue-lang/cue",
+    "backend": "aqua"
+  },
+  {
+    "name": "curlie",
+    "full_name": "aqua:rs/curlie",
+    "backend": "aqua"
+  },
+  {
+    "name": "cyclonedx",
+    "full_name": "aqua:CycloneDX/cyclonedx-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "d2",
+    "full_name": "aqua:terrastruct/d2",
+    "backend": "aqua"
+  },
+  {
+    "name": "dagger",
+    "full_name": "aqua:dagger/dagger",
+    "backend": "aqua"
+  },
+  {
+    "name": "dagu",
+    "full_name": "aqua:dagu-org/dagu",
+    "backend": "aqua"
+  },
+  {
+    "name": "danger-js",
+    "full_name": "npm:danger",
+    "backend": "npm"
+  },
+  {
+    "name": "dapr",
+    "full_name": "aqua:dapr/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "dart",
+    "full_name": "http:dart",
+    "backend": "http"
+  },
+  {
+    "name": "dasel",
+    "full_name": "aqua:TomWright/dasel",
+    "backend": "aqua"
+  },
+  {
+    "name": "databricks-cli",
+    "full_name": "github:databricks/cli[exe=databricks]",
+    "backend": "github"
+  },
+  {
+    "name": "datree",
+    "full_name": "aqua:datreeio/datree",
+    "backend": "aqua"
+  },
+  {
+    "name": "daytona",
+    "full_name": "github:daytonaio/daytona[bin=daytona]",
+    "backend": "github"
+  },
+  {
+    "name": "dbmate",
+    "full_name": "aqua:amacneil/dbmate",
+    "backend": "aqua"
+  },
+  {
+    "name": "deck",
+    "full_name": "aqua:Kong/deck",
+    "backend": "aqua"
+  },
+  {
+    "name": "delta",
+    "full_name": "aqua:dandavison/delta",
+    "backend": "aqua"
+  },
+  {
+    "name": "deno",
+    "full_name": "core:deno",
+    "backend": "core"
+  },
+  {
+    "name": "depot",
+    "full_name": "github:depot/cli[exe=depot]",
+    "backend": "github"
+  },
+  {
+    "name": "desk",
+    "full_name": "aqua:jamesob/desk",
+    "backend": "aqua"
+  },
+  {
+    "name": "devcontainer-cli",
+    "full_name": "npm:@devcontainers/cli",
+    "backend": "npm"
+  },
+  {
+    "name": "devspace",
+    "full_name": "aqua:devspace-sh/devspace",
+    "backend": "aqua"
+  },
+  {
+    "name": "dhall",
+    "full_name": "aqua:dhall-lang/dhall-haskell",
+    "backend": "aqua"
+  },
+  {
+    "name": "diffoci",
+    "full_name": "aqua:reproducible-containers/diffoci",
+    "backend": "aqua"
+  },
+  {
+    "name": "difftastic",
+    "full_name": "aqua:Wilfred/difftastic",
+    "backend": "aqua"
+  },
+  {
+    "name": "direnv",
+    "full_name": "aqua:direnv/direnv",
+    "backend": "aqua"
+  },
+  {
+    "name": "dive",
+    "full_name": "aqua:wagoodman/dive",
+    "backend": "aqua"
+  },
+  {
+    "name": "djinni",
+    "full_name": "github:cross-language-cpp/djinni-generator[bin=djinni,asset_pattern=djinni]",
+    "backend": "github"
+  },
+  {
+    "name": "docker-cli",
+    "full_name": "aqua:docker/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "docker-compose",
+    "full_name": "aqua:docker/compose",
+    "backend": "aqua"
+  },
+  {
+    "name": "docker-slim",
+    "full_name": "aqua:mintoolkit/mint",
+    "backend": "aqua"
+  },
+  {
+    "name": "dockle",
+    "full_name": "aqua:goodwithtech/dockle",
+    "backend": "aqua"
+  },
+  {
+    "name": "doctl",
+    "full_name": "aqua:digitalocean/doctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "docuum",
+    "full_name": "aqua:stepchowfun/docuum",
+    "backend": "aqua"
+  },
+  {
+    "name": "doggo",
+    "full_name": "aqua:mr-karan/doggo",
+    "backend": "aqua"
+  },
+  {
+    "name": "dome",
+    "full_name": "github:domeengine/dome",
+    "backend": "github"
+  },
+  {
+    "name": "doppler",
+    "full_name": "github:DopplerHQ/cli[exe=doppler]",
+    "backend": "github"
+  },
+  {
+    "name": "dotenv-linter",
+    "full_name": "aqua:dotenv-linter/dotenv-linter",
+    "backend": "aqua"
+  },
+  {
+    "name": "dotenvx",
+    "full_name": "aqua:dotenvx/dotenvx",
+    "backend": "aqua"
+  },
+  {
+    "name": "dotnet",
+    "full_name": "vfox:mise-plugins/vfox-dotnet",
+    "backend": "vfox"
+  },
+  {
+    "name": "dotnet-core",
+    "full_name": "asdf:mise-plugins/mise-dotnet-core",
+    "backend": "asdf"
+  },
+  {
+    "name": "dotslash",
+    "full_name": "github:facebook/dotslash",
+    "backend": "github"
+  },
+  {
+    "name": "dprint",
+    "full_name": "aqua:dprint/dprint",
+    "backend": "aqua"
+  },
+  {
+    "name": "draft",
+    "full_name": "aqua:Azure/draft",
+    "backend": "aqua"
+  },
+  {
+    "name": "driftctl",
+    "full_name": "aqua:snyk/driftctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "drone",
+    "full_name": "aqua:harness/drone-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "dt",
+    "full_name": "aqua:so-dang-cool/dt",
+    "backend": "aqua"
+  },
+  {
+    "name": "dtm",
+    "full_name": "github:devstream-io/devstream[exe=dtm]",
+    "backend": "github"
+  },
+  {
+    "name": "dua",
+    "full_name": "aqua:Byron/dua-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "duckdb",
+    "full_name": "aqua:duckdb/duckdb",
+    "backend": "aqua"
+  },
+  {
+    "name": "duf",
+    "full_name": "aqua:muesli/duf",
+    "backend": "aqua"
+  },
+  {
+    "name": "dust",
+    "full_name": "aqua:bootandy/dust",
+    "backend": "aqua"
+  },
+  {
+    "name": "dvc",
+    "full_name": "pipx:dvc",
+    "backend": "pipx"
+  },
+  {
+    "name": "dyff",
+    "full_name": "aqua:homeport/dyff",
+    "backend": "aqua"
+  },
+  {
+    "name": "dynatrace-monaco",
+    "full_name": "github:Dynatrace/dynatrace-configuration-as-code[exe=monaco]",
+    "backend": "github"
+  },
+  {
+    "name": "e1s",
+    "full_name": "aqua:keidarcy/e1s",
+    "backend": "aqua"
+  },
+  {
+    "name": "earthly",
+    "full_name": "aqua:earthly/earthly",
+    "backend": "aqua"
+  },
+  {
+    "name": "ecs-cli",
+    "full_name": "aqua:aws/amazon-ecs-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "ecspresso",
+    "full_name": "aqua:kayac/ecspresso",
+    "backend": "aqua"
+  },
+  {
+    "name": "edit",
+    "full_name": "aqua:microsoft/edit",
+    "backend": "aqua"
+  },
+  {
+    "name": "editorconfig-checker",
+    "full_name": "aqua:editorconfig-checker/editorconfig-checker",
+    "backend": "aqua"
+  },
+  {
+    "name": "ejson",
+    "full_name": "aqua:Shopify/ejson",
+    "backend": "aqua"
+  },
+  {
+    "name": "eksctl",
+    "full_name": "aqua:eksctl-io/eksctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "elasticsearch",
+    "full_name": "asdf:mise-plugins/mise-elasticsearch",
+    "backend": "asdf"
+  },
+  {
+    "name": "elixir",
+    "full_name": "core:elixir",
+    "backend": "core"
+  },
+  {
+    "name": "elixir-ls",
+    "full_name": "asdf:mise-plugins/mise-elixir-ls",
+    "backend": "asdf"
+  },
+  {
+    "name": "elm",
+    "full_name": "github:elm/compiler[bin=elm]",
+    "backend": "github"
+  },
+  {
+    "name": "emsdk",
+    "full_name": "asdf:mise-plugins/mise-emsdk",
+    "backend": "asdf"
+  },
+  {
+    "name": "envcli",
+    "full_name": "aqua:EnvCLI/EnvCLI",
+    "backend": "aqua"
+  },
+  {
+    "name": "envsubst",
+    "full_name": "aqua:a8m/envsubst",
+    "backend": "aqua"
+  },
+  {
+    "name": "erlang",
+    "full_name": "core:erlang",
+    "backend": "core"
+  },
+  {
+    "name": "esc",
+    "full_name": "aqua:pulumi/esc",
+    "backend": "aqua"
+  },
+  {
+    "name": "esy",
+    "full_name": "npm:esy",
+    "backend": "npm"
+  },
+  {
+    "name": "etcd",
+    "full_name": "aqua:etcd-io/etcd",
+    "backend": "aqua"
+  },
+  {
+    "name": "evans",
+    "full_name": "aqua:ktr0731/evans",
+    "backend": "aqua"
+  },
+  {
+    "name": "eza",
+    "full_name": "aqua:eza-community/eza",
+    "backend": "aqua"
+  },
+  {
+    "name": "fastfetch",
+    "full_name": "aqua:fastfetch-cli/fastfetch",
+    "backend": "aqua"
+  },
+  {
+    "name": "fd",
+    "full_name": "aqua:sharkdp/fd",
+    "backend": "aqua"
+  },
+  {
+    "name": "ffmpeg",
+    "full_name": "asdf:mise-plugins/mise-ffmpeg",
+    "backend": "asdf"
+  },
+  {
+    "name": "figma-export",
+    "full_name": "github:RedMadRobot/figma-export[bin_path=Release]",
+    "backend": "github"
+  },
+  {
+    "name": "fillin",
+    "full_name": "aqua:itchyny/fillin",
+    "backend": "aqua"
+  },
+  {
+    "name": "firebase",
+    "full_name": "aqua:firebase/firebase-tools",
+    "backend": "aqua"
+  },
+  {
+    "name": "fission",
+    "full_name": "aqua:fission/fission",
+    "backend": "aqua"
+  },
+  {
+    "name": "flamingo",
+    "full_name": "github:flux-subsystem-argo/flamingo",
+    "backend": "github"
+  },
+  {
+    "name": "flarectl",
+    "full_name": "github:cloudflare/cloudflare-go[exe=flarectl]",
+    "backend": "github"
+  },
+  {
+    "name": "flatc",
+    "full_name": "github:google/flatbuffers[exe=flatc]",
+    "backend": "github"
+  },
+  {
+    "name": "flutter",
+    "full_name": "http:flutter",
+    "backend": "http"
+  },
+  {
+    "name": "fluttergen",
+    "full_name": "github:FlutterGen/flutter_gen[exe=fluttergen]",
+    "backend": "github"
+  },
+  {
+    "name": "flux2",
+    "full_name": "aqua:fluxcd/flux2",
+    "backend": "aqua"
+  },
+  {
+    "name": "fly",
+    "full_name": "aqua:concourse/concourse/fly",
+    "backend": "aqua"
+  },
+  {
+    "name": "flyctl",
+    "full_name": "aqua:superfly/flyctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "flyway",
+    "full_name": "github:flyway/flyway[version_prefix=flyway-]",
+    "backend": "github"
+  },
+  {
+    "name": "fnox",
+    "full_name": "github:jdx/fnox",
+    "backend": "github"
+  },
+  {
+    "name": "foundry",
+    "full_name": "aqua:foundry-rs/foundry",
+    "backend": "aqua"
+  },
+  {
+    "name": "func-e",
+    "full_name": "github:tetratelabs/func-e",
+    "backend": "github"
+  },
+  {
+    "name": "furyctl",
+    "full_name": "github:sighupio/furyctl",
+    "backend": "github"
+  },
+  {
+    "name": "fx",
+    "full_name": "aqua:antonmedv/fx",
+    "backend": "aqua"
+  },
+  {
+    "name": "fzf",
+    "full_name": "aqua:junegunn/fzf",
+    "backend": "aqua"
+  },
+  {
+    "name": "gallery-dl",
+    "full_name": "pipx:gallery-dl",
+    "backend": "pipx"
+  },
+  {
+    "name": "gam",
+    "full_name": "github:GAM-team/GAM[exe=gam]",
+    "backend": "github"
+  },
+  {
+    "name": "gator",
+    "full_name": "aqua:open-policy-agent/gatekeeper",
+    "backend": "aqua"
+  },
+  {
+    "name": "gcc-arm-none-eabi",
+    "full_name": "asdf:mise-plugins/mise-gcc-arm-none-eabi",
+    "backend": "asdf"
+  },
+  {
+    "name": "gcloud",
+    "full_name": "vfox:mise-plugins/vfox-gcloud",
+    "backend": "vfox"
+  },
+  {
+    "name": "gdu",
+    "full_name": "aqua:dundee/gdu",
+    "backend": "aqua"
+  },
+  {
+    "name": "gemini",
+    "full_name": "npm:@google/gemini-cli",
+    "backend": "npm"
+  },
+  {
+    "name": "gemini-cli",
+    "full_name": "npm:@google/gemini-cli",
+    "backend": "npm"
+  },
+  {
+    "name": "getenvoy",
+    "full_name": "github:tetratelabs-attic/getenvoy",
+    "backend": "github"
+  },
+  {
+    "name": "ggshield",
+    "full_name": "aqua:GitGuardian/ggshield",
+    "backend": "aqua"
+  },
+  {
+    "name": "gh",
+    "full_name": "aqua:cli/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "ghalint",
+    "full_name": "aqua:suzuki-shunsuke/ghalint",
+    "backend": "aqua"
+  },
+  {
+    "name": "ghc",
+    "full_name": "asdf:mise-plugins/mise-ghcup",
+    "backend": "asdf"
+  },
+  {
+    "name": "ghcup",
+    "full_name": "aqua:haskell/ghcup-hs",
+    "backend": "aqua"
+  },
+  {
+    "name": "ghorg",
+    "full_name": "aqua:gabrie30/ghorg",
+    "backend": "aqua"
+  },
+  {
+    "name": "ghq",
+    "full_name": "aqua:x-motemen/ghq",
+    "backend": "aqua"
+  },
+  {
+    "name": "ginkgo",
+    "full_name": "go:github.com/onsi/ginkgo/v2/ginkgo",
+    "backend": "go"
+  },
+  {
+    "name": "git-chglog",
+    "full_name": "aqua:git-chglog/git-chglog",
+    "backend": "aqua"
+  },
+  {
+    "name": "git-cliff",
+    "full_name": "aqua:orhun/git-cliff",
+    "backend": "aqua"
+  },
+  {
+    "name": "git-lfs",
+    "full_name": "aqua:git-lfs/git-lfs",
+    "backend": "aqua"
+  },
+  {
+    "name": "gitconfig",
+    "full_name": "github:0ghny/gitconfig",
+    "backend": "github"
+  },
+  {
+    "name": "github-cli",
+    "full_name": "aqua:cli/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "github-markdown-toc",
+    "full_name": "aqua:ekalinin/github-markdown-toc",
+    "backend": "aqua"
+  },
+  {
+    "name": "gitleaks",
+    "full_name": "aqua:gitleaks/gitleaks",
+    "backend": "aqua"
+  },
+  {
+    "name": "gitsign",
+    "full_name": "aqua:sigstore/gitsign",
+    "backend": "aqua"
+  },
+  {
+    "name": "gitu",
+    "full_name": "aqua:altsem/gitu",
+    "backend": "aqua"
+  },
+  {
+    "name": "gitui",
+    "full_name": "aqua:extrawurst/gitui",
+    "backend": "aqua"
+  },
+  {
+    "name": "gitversion",
+    "full_name": "aqua:gittools/gitversion",
+    "backend": "aqua"
+  },
+  {
+    "name": "glab",
+    "full_name": "gitlab:gitlab-org/cli[exe=glab]",
+    "backend": "gitlab"
+  },
+  {
+    "name": "gleam",
+    "full_name": "aqua:gleam-lang/gleam",
+    "backend": "aqua"
+  },
+  {
+    "name": "glen",
+    "full_name": "github:lingrino/glen",
+    "backend": "github"
+  },
+  {
+    "name": "glooctl",
+    "full_name": "github:solo-io/gloo",
+    "backend": "github"
+  },
+  {
+    "name": "glow",
+    "full_name": "aqua:charmbracelet/glow",
+    "backend": "aqua"
+  },
+  {
+    "name": "go",
+    "full_name": "core:go",
+    "backend": "core"
+  },
+  {
+    "name": "go-containerregistry",
+    "full_name": "aqua:google/go-containerregistry",
+    "backend": "aqua"
+  },
+  {
+    "name": "go-getter",
+    "full_name": "aqua:hashicorp/go-getter",
+    "backend": "aqua"
+  },
+  {
+    "name": "go-jira",
+    "full_name": "aqua:go-jira/jira",
+    "backend": "aqua"
+  },
+  {
+    "name": "go-jsonnet",
+    "full_name": "aqua:google/go-jsonnet",
+    "backend": "aqua"
+  },
+  {
+    "name": "go-junit-report",
+    "full_name": "aqua:jstemmer/go-junit-report",
+    "backend": "aqua"
+  },
+  {
+    "name": "go-sdk",
+    "full_name": "asdf:mise-plugins/mise-go-sdk",
+    "backend": "asdf"
+  },
+  {
+    "name": "go-swagger",
+    "full_name": "aqua:go-swagger/go-swagger",
+    "backend": "aqua"
+  },
+  {
+    "name": "goconvey",
+    "full_name": "go:github.com/smartystreets/goconvey",
+    "backend": "go"
+  },
+  {
+    "name": "gocryptfs",
+    "full_name": "aqua:rfjakob/gocryptfs",
+    "backend": "aqua"
+  },
+  {
+    "name": "gofumpt",
+    "full_name": "aqua:mvdan/gofumpt",
+    "backend": "aqua"
+  },
+  {
+    "name": "gojq",
+    "full_name": "aqua:itchyny/gojq",
+    "backend": "aqua"
+  },
+  {
+    "name": "gokey",
+    "full_name": "aqua:cloudflare/gokey",
+    "backend": "aqua"
+  },
+  {
+    "name": "golangci-lint",
+    "full_name": "aqua:golangci/golangci-lint",
+    "backend": "aqua"
+  },
+  {
+    "name": "golangci-lint-langserver",
+    "full_name": "aqua:nametake/golangci-lint-langserver",
+    "backend": "aqua"
+  },
+  {
+    "name": "golines",
+    "full_name": "aqua:segmentio/golines",
+    "backend": "aqua"
+  },
+  {
+    "name": "gomigrate",
+    "full_name": "aqua:golang-migrate/migrate",
+    "backend": "aqua"
+  },
+  {
+    "name": "gomplate",
+    "full_name": "aqua:hairyhenderson/gomplate",
+    "backend": "aqua"
+  },
+  {
+    "name": "gopass",
+    "full_name": "aqua:gopasspw/gopass",
+    "backend": "aqua"
+  },
+  {
+    "name": "goreleaser",
+    "full_name": "aqua:goreleaser/goreleaser",
+    "backend": "aqua"
+  },
+  {
+    "name": "goss",
+    "full_name": "aqua:goss-org/goss",
+    "backend": "aqua"
+  },
+  {
+    "name": "gotestsum",
+    "full_name": "aqua:gotestyourself/gotestsum",
+    "backend": "aqua"
+  },
+  {
+    "name": "gping",
+    "full_name": "aqua:orf/gping",
+    "backend": "aqua"
+  },
+  {
+    "name": "graalvm",
+    "full_name": "asdf:mise-plugins/mise-graalvm",
+    "backend": "asdf"
+  },
+  {
+    "name": "gradle",
+    "full_name": "aqua:gradle/gradle",
+    "backend": "aqua"
+  },
+  {
+    "name": "grain",
+    "full_name": "github:grain-lang/grain[version_prefix=grain-v]",
+    "backend": "github"
+  },
+  {
+    "name": "granted",
+    "full_name": "aqua:common-fate/granted",
+    "backend": "aqua"
+  },
+  {
+    "name": "graphite",
+    "full_name": "github:withgraphite/homebrew-tap[exe=gt]",
+    "backend": "github"
+  },
+  {
+    "name": "grex",
+    "full_name": "aqua:pemistahl/grex",
+    "backend": "aqua"
+  },
+  {
+    "name": "gron",
+    "full_name": "aqua:tomnomnom/gron",
+    "backend": "aqua"
+  },
+  {
+    "name": "groovy",
+    "full_name": "asdf:mise-plugins/mise-groovy",
+    "backend": "asdf"
+  },
+  {
+    "name": "grpc-health-probe",
+    "full_name": "aqua:grpc-ecosystem/grpc-health-probe",
+    "backend": "aqua"
+  },
+  {
+    "name": "grpcurl",
+    "full_name": "aqua:fullstorydev/grpcurl",
+    "backend": "aqua"
+  },
+  {
+    "name": "grype",
+    "full_name": "aqua:anchore/grype",
+    "backend": "aqua"
+  },
+  {
+    "name": "gum",
+    "full_name": "aqua:charmbracelet/gum",
+    "backend": "aqua"
+  },
+  {
+    "name": "gup",
+    "full_name": "aqua:nao1215/gup",
+    "backend": "aqua"
+  },
+  {
+    "name": "gwvault",
+    "full_name": "aqua:GoodwayGroup/gwvault",
+    "backend": "aqua"
+  },
+  {
+    "name": "hadolint",
+    "full_name": "aqua:hadolint/hadolint",
+    "backend": "aqua"
+  },
+  {
+    "name": "harper-cli",
+    "full_name": "aqua:Automattic/harper/harper-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "harper-ls",
+    "full_name": "aqua:Automattic/harper/harper-ls",
+    "backend": "aqua"
+  },
+  {
+    "name": "has",
+    "full_name": "aqua:kdabir/has",
+    "backend": "aqua"
+  },
+  {
+    "name": "hasura-cli",
+    "full_name": "aqua:hasura/graphql-engine",
+    "backend": "aqua"
+  },
+  {
+    "name": "hatch",
+    "full_name": "pipx:hatch",
+    "backend": "pipx"
+  },
+  {
+    "name": "haxe",
+    "full_name": "github:HaxeFoundation/haxe",
+    "backend": "github"
+  },
+  {
+    "name": "hcl2json",
+    "full_name": "aqua:tmccombs/hcl2json",
+    "backend": "aqua"
+  },
+  {
+    "name": "hcloud",
+    "full_name": "aqua:hetznercloud/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "helix",
+    "full_name": "aqua:helix-editor/helix",
+    "backend": "aqua"
+  },
+  {
+    "name": "helm",
+    "full_name": "aqua:helm/helm",
+    "backend": "aqua"
+  },
+  {
+    "name": "helm-cr",
+    "full_name": "aqua:helm/chart-releaser",
+    "backend": "aqua"
+  },
+  {
+    "name": "helm-ct",
+    "full_name": "aqua:helm/chart-testing",
+    "backend": "aqua"
+  },
+  {
+    "name": "helm-diff",
+    "full_name": "github:databus23/helm-diff[bin_path=diff/bin,rename_exe=helm-diff]",
+    "backend": "github"
+  },
+  {
+    "name": "helm-docs",
+    "full_name": "aqua:norwoodj/helm-docs",
+    "backend": "aqua"
+  },
+  {
+    "name": "helm-ls",
+    "full_name": "aqua:mrjosh/helm-ls",
+    "backend": "aqua"
+  },
+  {
+    "name": "helmfile",
+    "full_name": "aqua:helmfile/helmfile",
+    "backend": "aqua"
+  },
+  {
+    "name": "helmsman",
+    "full_name": "github:Praqma/helmsman",
+    "backend": "github"
+  },
+  {
+    "name": "helmwave",
+    "full_name": "aqua:helmwave/helmwave",
+    "backend": "aqua"
+  },
+  {
+    "name": "heroku",
+    "full_name": "npm:heroku",
+    "backend": "npm"
+  },
+  {
+    "name": "heroku-cli",
+    "full_name": "npm:heroku",
+    "backend": "npm"
+  },
+  {
+    "name": "hexyl",
+    "full_name": "aqua:sharkdp/hexyl",
+    "backend": "aqua"
+  },
+  {
+    "name": "hishtory",
+    "full_name": "github:ddworken/hishtory",
+    "backend": "github"
+  },
+  {
+    "name": "hivemind",
+    "full_name": "github:DarthSim/hivemind",
+    "backend": "github"
+  },
+  {
+    "name": "hk",
+    "full_name": "aqua:jdx/hk",
+    "backend": "aqua"
+  },
+  {
+    "name": "hledger",
+    "full_name": "github:simonmichael/hledger",
+    "backend": "github"
+  },
+  {
+    "name": "hledger-flow",
+    "full_name": "github:apauley/hledger-flow",
+    "backend": "github"
+  },
+  {
+    "name": "hostctl",
+    "full_name": "aqua:guumaster/hostctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "htmlq",
+    "full_name": "aqua:mgdm/htmlq",
+    "backend": "aqua"
+  },
+  {
+    "name": "httpie-go",
+    "full_name": "aqua:nojima/httpie-go",
+    "backend": "aqua"
+  },
+  {
+    "name": "hub",
+    "full_name": "aqua:mislav/hub",
+    "backend": "aqua"
+  },
+  {
+    "name": "hugo",
+    "full_name": "aqua:gohugoio/hugo",
+    "backend": "aqua"
+  },
+  {
+    "name": "hugo-extended",
+    "full_name": "aqua:gohugoio/hugo/hugo-extended",
+    "backend": "aqua"
+  },
+  {
+    "name": "hurl",
+    "full_name": "aqua:Orange-OpenSource/hurl",
+    "backend": "aqua"
+  },
+  {
+    "name": "hwatch",
+    "full_name": "aqua:blacknon/hwatch",
+    "backend": "aqua"
+  },
+  {
+    "name": "hygen",
+    "full_name": "github:jondot/hygen",
+    "backend": "github"
+  },
+  {
+    "name": "hyperfine",
+    "full_name": "aqua:sharkdp/hyperfine",
+    "backend": "aqua"
+  },
+  {
+    "name": "iam-policy-json-to-terraform",
+    "full_name": "aqua:flosell/iam-policy-json-to-terraform",
+    "backend": "aqua"
+  },
+  {
+    "name": "iamlive",
+    "full_name": "aqua:iann0036/iamlive",
+    "backend": "aqua"
+  },
+  {
+    "name": "imagemagick",
+    "full_name": "asdf:mise-plugins/mise-imagemagick",
+    "backend": "asdf"
+  },
+  {
+    "name": "imgpkg",
+    "full_name": "aqua:carvel-dev/imgpkg",
+    "backend": "aqua"
+  },
+  {
+    "name": "infisical",
+    "full_name": "github:Infisical/cli",
+    "backend": "github"
+  },
+  {
+    "name": "infracost",
+    "full_name": "aqua:infracost/infracost",
+    "backend": "aqua"
+  },
+  {
+    "name": "inlets",
+    "full_name": "aqua:inlets/inletsctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "istioctl",
+    "full_name": "aqua:istio/istio/istioctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "jaq",
+    "full_name": "aqua:01mf02/jaq",
+    "backend": "aqua"
+  },
+  {
+    "name": "java",
+    "full_name": "core:java",
+    "backend": "core"
+  },
+  {
+    "name": "jb",
+    "full_name": "aqua:jsonnet-bundler/jsonnet-bundler",
+    "backend": "aqua"
+  },
+  {
+    "name": "jbang",
+    "full_name": "asdf:mise-plugins/jbang-asdf",
+    "backend": "asdf"
+  },
+  {
+    "name": "jc",
+    "full_name": "aqua:kellyjonbrazil/jc",
+    "backend": "aqua"
+  },
+  {
+    "name": "jd",
+    "full_name": "aqua:josephburnett/jd",
+    "backend": "aqua"
+  },
+  {
+    "name": "jfrog-cli",
+    "full_name": "asdf:mise-plugins/mise-jfrog-cli",
+    "backend": "asdf"
+  },
+  {
+    "name": "jib",
+    "full_name": "asdf:mise-plugins/mise-jib",
+    "backend": "asdf"
+  },
+  {
+    "name": "jiq",
+    "full_name": "aqua:fiatjaf/jiq",
+    "backend": "aqua"
+  },
+  {
+    "name": "jj",
+    "full_name": "aqua:jj-vcs/jj",
+    "backend": "aqua"
+  },
+  {
+    "name": "jjui",
+    "full_name": "aqua:idursun/jjui",
+    "backend": "aqua"
+  },
+  {
+    "name": "jless",
+    "full_name": "aqua:PaulJuliusMartinez/jless",
+    "backend": "aqua"
+  },
+  {
+    "name": "jmespath",
+    "full_name": "aqua:jmespath/jp",
+    "backend": "aqua"
+  },
+  {
+    "name": "jnv",
+    "full_name": "aqua:ynqa/jnv",
+    "backend": "aqua"
+  },
+  {
+    "name": "jq",
+    "full_name": "aqua:jqlang/jq",
+    "backend": "aqua"
+  },
+  {
+    "name": "jqp",
+    "full_name": "aqua:noahgorstein/jqp",
+    "backend": "aqua"
+  },
+  {
+    "name": "jreleaser",
+    "full_name": "aqua:jreleaser/jreleaser",
+    "backend": "aqua"
+  },
+  {
+    "name": "json5",
+    "full_name": "npm:json5",
+    "backend": "npm"
+  },
+  {
+    "name": "jsonnet-bundler",
+    "full_name": "aqua:jsonnet-bundler/jsonnet-bundler",
+    "backend": "aqua"
+  },
+  {
+    "name": "jsonschema",
+    "full_name": "aqua:sourcemeta/jsonschema",
+    "backend": "aqua"
+  },
+  {
+    "name": "jujutsu",
+    "full_name": "aqua:jj-vcs/jj",
+    "backend": "aqua"
+  },
+  {
+    "name": "jujutsu-ui",
+    "full_name": "aqua:idursun/jjui",
+    "backend": "aqua"
+  },
+  {
+    "name": "jules",
+    "full_name": "npm:@google/jules",
+    "backend": "npm"
+  },
+  {
+    "name": "julia",
+    "full_name": "asdf:mise-plugins/mise-julia",
+    "backend": "asdf"
+  },
+  {
+    "name": "just",
+    "full_name": "aqua:casey/just",
+    "backend": "aqua"
+  },
+  {
+    "name": "jwt",
+    "full_name": "aqua:mike-engel/jwt-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "jwtui",
+    "full_name": "github:jwt-rs/jwt-ui[exe=jwtui]",
+    "backend": "github"
+  },
+  {
+    "name": "jx",
+    "full_name": "aqua:jenkins-x/jx",
+    "backend": "aqua"
+  },
+  {
+    "name": "k0sctl",
+    "full_name": "aqua:k0sproject/k0sctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "k2tf",
+    "full_name": "aqua:sl1pm4t/k2tf",
+    "backend": "aqua"
+  },
+  {
+    "name": "k3d",
+    "full_name": "aqua:k3d-io/k3d",
+    "backend": "aqua"
+  },
+  {
+    "name": "k3kcli",
+    "full_name": "github:rancher/k3k[bin=k3k,version_prefix=v,asset_pattern=k3kcli-{darwin_os}-{amd64_arch}]",
+    "backend": "github"
+  },
+  {
+    "name": "k3s",
+    "full_name": "aqua:k3s-io/k3s",
+    "backend": "aqua"
+  },
+  {
+    "name": "k3sup",
+    "full_name": "aqua:alexellis/k3sup",
+    "backend": "aqua"
+  },
+  {
+    "name": "k6",
+    "full_name": "aqua:grafana/k6",
+    "backend": "aqua"
+  },
+  {
+    "name": "k9s",
+    "full_name": "aqua:derailed/k9s",
+    "backend": "aqua"
+  },
+  {
+    "name": "kafkactl",
+    "full_name": "aqua:deviceinsight/kafkactl",
+    "backend": "aqua"
+  },
+  {
+    "name": "kapp",
+    "full_name": "aqua:carvel-dev/kapp",
+    "backend": "aqua"
+  },
+  {
+    "name": "kbld",
+    "full_name": "aqua:carvel-dev/kbld",
+    "backend": "aqua"
+  },
+  {
+    "name": "kcctl",
+    "full_name": "github:kcctl/kcctl",
+    "backend": "github"
+  },
+  {
+    "name": "kcl",
+    "full_name": "aqua:kcl-lang/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "kconf",
+    "full_name": "aqua:particledecay/kconf",
+    "backend": "aqua"
+  },
+  {
+    "name": "ki",
+    "full_name": "aqua:Kotlin/kotlin-interactive-shell",
+    "backend": "aqua"
+  },
+  {
+    "name": "killport",
+    "full_name": "aqua:jkfran/killport",
+    "backend": "aqua"
+  },
+  {
+    "name": "kind",
+    "full_name": "aqua:kubernetes-sigs/kind",
+    "backend": "aqua"
+  },
+  {
+    "name": "kiota",
+    "full_name": "aqua:microsoft/kiota",
+    "backend": "aqua"
+  },
+  {
+    "name": "kn",
+    "full_name": "aqua:knative/client",
+    "backend": "aqua"
+  },
+  {
+    "name": "ko",
+    "full_name": "aqua:ko-build/ko",
+    "backend": "aqua"
+  },
+  {
+    "name": "koka",
+    "full_name": "github:koka-lang/koka",
+    "backend": "github"
+  },
+  {
+    "name": "kompose",
+    "full_name": "aqua:kubernetes/kompose",
+    "backend": "aqua"
+  },
+  {
+    "name": "kopia",
+    "full_name": "aqua:kopia/kopia",
+    "backend": "aqua"
+  },
+  {
+    "name": "kops",
+    "full_name": "aqua:kubernetes/kops",
+    "backend": "aqua"
+  },
+  {
+    "name": "kotlin",
+    "full_name": "github:JetBrains/kotlin[asset_pattern=kotlin-compiler-*.zip,bin_path=kotlinc/bin]",
+    "backend": "github"
+  },
+  {
+    "name": "kp",
+    "full_name": "github:vmware-tanzu/kpack-cli[exe=kp]",
+    "backend": "github"
+  },
+  {
+    "name": "kpack",
+    "full_name": "github:vmware-tanzu/kpack-cli[exe=kp]",
+    "backend": "github"
+  },
+  {
+    "name": "kpt",
+    "full_name": "aqua:kptdev/kpt",
+    "backend": "aqua"
+  },
+  {
+    "name": "krab",
+    "full_name": "aqua:ohkrab/krab",
+    "backend": "aqua"
+  },
+  {
+    "name": "krew",
+    "full_name": "aqua:kubernetes-sigs/krew",
+    "backend": "aqua"
+  },
+  {
+    "name": "kscript",
+    "full_name": "github:kscripting/kscript",
+    "backend": "github"
+  },
+  {
+    "name": "ksops",
+    "full_name": "aqua:viaduct-ai/kustomize-sops",
+    "backend": "aqua"
+  },
+  {
+    "name": "ktlint",
+    "full_name": "aqua:pinterest/ktlint",
+    "backend": "aqua"
+  },
+  {
+    "name": "kube-capacity",
+    "full_name": "aqua:robscott/kube-capacity",
+    "backend": "aqua"
+  },
+  {
+    "name": "kube-controller-tools",
+    "full_name": "github:kubernetes-sigs/controller-tools[exe=controller-gen]",
+    "backend": "github"
+  },
+  {
+    "name": "kube-credential-cache",
+    "full_name": "aqua:ryodocx/kube-credential-cache",
+    "backend": "aqua"
+  },
+  {
+    "name": "kube-linter",
+    "full_name": "aqua:stackrox/kube-linter",
+    "backend": "aqua"
+  },
+  {
+    "name": "kube-score",
+    "full_name": "aqua:zegl/kube-score",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubebuilder",
+    "full_name": "aqua:kubernetes-sigs/kubebuilder",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubecm",
+    "full_name": "aqua:sunny0826/kubecm",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubecolor",
+    "full_name": "aqua:kubecolor/kubecolor",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubeconform",
+    "full_name": "aqua:yannh/kubeconform",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubectl",
+    "full_name": "aqua:kubernetes/kubernetes/kubectl",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubectl-bindrole",
+    "full_name": "aqua:Ladicle/kubectl-rolesum",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubectl-convert",
+    "full_name": "aqua:kubernetes/kubernetes/kubectl-convert",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubectl-kots",
+    "full_name": "aqua:replicatedhq/kots",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubectl-kuttl",
+    "full_name": "aqua:kudobuilder/kuttl",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubectl-rolesum",
+    "full_name": "aqua:Ladicle/kubectl-rolesum",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubectx",
+    "full_name": "aqua:ahmetb/kubectx",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubefedctl",
+    "full_name": "aqua:kubernetes-retired/kubefed",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubefirst",
+    "full_name": "github:konstructio/kubefirst",
+    "backend": "github"
+  },
+  {
+    "name": "kubelogin",
+    "full_name": "aqua:int128/kubelogin",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubemqctl",
+    "full_name": "aqua:kubemq-io/kubemqctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubens",
+    "full_name": "aqua:ahmetb/kubectx/kubens",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubent",
+    "full_name": "aqua:doitintl/kube-no-trouble",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubeone",
+    "full_name": "aqua:kubermatic/kubeone",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubergrunt",
+    "full_name": "aqua:gruntwork-io/kubergrunt",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubeseal",
+    "full_name": "aqua:bitnami-labs/sealed-secrets",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubesec",
+    "full_name": "aqua:controlplaneio/kubesec",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubeshark",
+    "full_name": "aqua:kubeshark/kubeshark",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubespy",
+    "full_name": "aqua:pulumi/kubespy",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubeswitch",
+    "full_name": "aqua:danielfoehrKn/kubeswitch",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubeval",
+    "full_name": "aqua:instrumenta/kubeval",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubevela",
+    "full_name": "aqua:kubevela/kubevela",
+    "backend": "aqua"
+  },
+  {
+    "name": "kubie",
+    "full_name": "aqua:sbstp/kubie",
+    "backend": "aqua"
+  },
+  {
+    "name": "kustomize",
+    "full_name": "aqua:kubernetes-sigs/kustomize",
+    "backend": "aqua"
+  },
+  {
+    "name": "kuttl",
+    "full_name": "aqua:kudobuilder/kuttl",
+    "backend": "aqua"
+  },
+  {
+    "name": "kwokctl",
+    "full_name": "aqua:kubernetes-sigs/kwok/kwokctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "kwt",
+    "full_name": "aqua:carvel-dev/kwt",
+    "backend": "aqua"
+  },
+  {
+    "name": "kyverno",
+    "full_name": "aqua:kyverno/kyverno",
+    "backend": "aqua"
+  },
+  {
+    "name": "lab",
+    "full_name": "aqua:zaquestion/lab",
+    "backend": "aqua"
+  },
+  {
+    "name": "lane",
+    "full_name": "github:CodeReaper/lane",
+    "backend": "github"
+  },
+  {
+    "name": "lazydocker",
+    "full_name": "aqua:jesseduffield/lazydocker",
+    "backend": "aqua"
+  },
+  {
+    "name": "lazygit",
+    "full_name": "aqua:jesseduffield/lazygit",
+    "backend": "aqua"
+  },
+  {
+    "name": "lazyjournal",
+    "full_name": "aqua:Lifailon/lazyjournal",
+    "backend": "aqua"
+  },
+  {
+    "name": "lazyssh",
+    "full_name": "aqua:Adembc/lazyssh",
+    "backend": "aqua"
+  },
+  {
+    "name": "lefthook",
+    "full_name": "aqua:evilmartians/lefthook",
+    "backend": "aqua"
+  },
+  {
+    "name": "leiningen",
+    "full_name": "vfox:mise-plugins/vfox-leiningen",
+    "backend": "vfox"
+  },
+  {
+    "name": "levant",
+    "full_name": "aqua:hashicorp/levant",
+    "backend": "aqua"
+  },
+  {
+    "name": "libsql-server",
+    "full_name": "github:tursodatabase/libsql[version_prefix=libsql-server-v]",
+    "backend": "github"
+  },
+  {
+    "name": "license-plist",
+    "full_name": "aqua:mono0926/LicensePlist",
+    "backend": "aqua"
+  },
+  {
+    "name": "lima",
+    "full_name": "aqua:lima-vm/lima",
+    "backend": "aqua"
+  },
+  {
+    "name": "linkerd",
+    "full_name": "aqua:linkerd/linkerd2",
+    "backend": "aqua"
+  },
+  {
+    "name": "liqoctl",
+    "full_name": "aqua:liqotech/liqo",
+    "backend": "aqua"
+  },
+  {
+    "name": "liquibase",
+    "full_name": "asdf:mise-plugins/mise-liquibase",
+    "backend": "asdf"
+  },
+  {
+    "name": "litestream",
+    "full_name": "aqua:benbjohnson/litestream",
+    "backend": "aqua"
+  },
+  {
+    "name": "lnav",
+    "full_name": "aqua:tstack/lnav",
+    "backend": "aqua"
+  },
+  {
+    "name": "localstack",
+    "full_name": "github:localstack/localstack-cli[exe=localstack]",
+    "backend": "github"
+  },
+  {
+    "name": "loki-logcli",
+    "full_name": "aqua:grafana/loki/logcli",
+    "backend": "aqua"
+  },
+  {
+    "name": "ls-lint",
+    "full_name": "aqua:loeffel-io/ls-lint",
+    "backend": "aqua"
+  },
+  {
+    "name": "lsd",
+    "full_name": "aqua:lsd-rs/lsd",
+    "backend": "aqua"
+  },
+  {
+    "name": "lua",
+    "full_name": "vfox:mise-plugins/vfox-lua",
+    "backend": "vfox"
+  },
+  {
+    "name": "lua-language-server",
+    "full_name": "aqua:LuaLS/lua-language-server",
+    "backend": "aqua"
+  },
+  {
+    "name": "luajit",
+    "full_name": "asdf:mise-plugins/mise-luaJIT",
+    "backend": "asdf"
+  },
+  {
+    "name": "luau",
+    "full_name": "aqua:luau-lang/luau",
+    "backend": "aqua"
+  },
+  {
+    "name": "lychee",
+    "full_name": "aqua:lycheeverse/lychee",
+    "backend": "aqua"
+  },
+  {
+    "name": "maestro",
+    "full_name": "github:mobile-dev-inc/maestro",
+    "backend": "github"
+  },
+  {
+    "name": "mage",
+    "full_name": "aqua:magefile/mage",
+    "backend": "aqua"
+  },
+  {
+    "name": "magika",
+    "full_name": "cargo:magika-cli",
+    "backend": "cargo"
+  },
+  {
+    "name": "make",
+    "full_name": "asdf:mise-plugins/mise-make",
+    "backend": "asdf"
+  },
+  {
+    "name": "mani",
+    "full_name": "aqua:alajmo/mani",
+    "backend": "aqua"
+  },
+  {
+    "name": "mark",
+    "full_name": "github:kovetskiy/mark",
+    "backend": "github"
+  },
+  {
+    "name": "markdownlint-cli2",
+    "full_name": "npm:markdownlint-cli2",
+    "backend": "npm"
+  },
+  {
+    "name": "marksman",
+    "full_name": "aqua:artempyanykh/marksman",
+    "backend": "aqua"
+  },
+  {
+    "name": "marp-cli",
+    "full_name": "aqua:marp-team/marp-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "mask",
+    "full_name": "aqua:jacobdeichert/mask",
+    "backend": "aqua"
+  },
+  {
+    "name": "maven",
+    "full_name": "aqua:apache/maven",
+    "backend": "aqua"
+  },
+  {
+    "name": "mc",
+    "full_name": "aqua:minio/mc",
+    "backend": "aqua"
+  },
+  {
+    "name": "mdbook",
+    "full_name": "aqua:rust-lang/mdBook",
+    "backend": "aqua"
+  },
+  {
+    "name": "mdbook-linkcheck",
+    "full_name": "github:Michael-F-Bryan/mdbook-linkcheck[bin=mdbook-linkcheck]",
+    "backend": "github"
+  },
+  {
+    "name": "melange",
+    "full_name": "aqua:chainguard-dev/melange",
+    "backend": "aqua"
+  },
+  {
+    "name": "melt",
+    "full_name": "github:charmbracelet/melt",
+    "backend": "github"
+  },
+  {
+    "name": "meson",
+    "full_name": "pipx:meson",
+    "backend": "pipx"
+  },
+  {
+    "name": "micromamba",
+    "full_name": "github:mamba-org/micromamba-releases",
+    "backend": "github"
+  },
+  {
+    "name": "micronaut",
+    "full_name": "github:micronaut-projects/micronaut-starter[exe=mn]",
+    "backend": "github"
+  },
+  {
+    "name": "miller",
+    "full_name": "aqua:johnkerl/miller",
+    "backend": "aqua"
+  },
+  {
+    "name": "mimirtool",
+    "full_name": "aqua:grafana/mimir/mimirtool",
+    "backend": "aqua"
+  },
+  {
+    "name": "minify",
+    "full_name": "aqua:tdewolff/minify",
+    "backend": "aqua"
+  },
+  {
+    "name": "minikube",
+    "full_name": "aqua:kubernetes/minikube",
+    "backend": "aqua"
+  },
+  {
+    "name": "minio",
+    "full_name": "asdf:mise-plugins/mise-minio",
+    "backend": "asdf"
+  },
+  {
+    "name": "minishift",
+    "full_name": "aqua:minishift/minishift",
+    "backend": "aqua"
+  },
+  {
+    "name": "minisign",
+    "full_name": "aqua:jedisct1/minisign",
+    "backend": "aqua"
+  },
+  {
+    "name": "mint",
+    "full_name": "github:mint-lang/mint",
+    "backend": "github"
+  },
+  {
+    "name": "mirrord",
+    "full_name": "aqua:metalbear-co/mirrord",
+    "backend": "aqua"
+  },
+  {
+    "name": "mitmproxy",
+    "full_name": "pipx:mitmproxy",
+    "backend": "pipx"
+  },
+  {
+    "name": "mkcert",
+    "full_name": "aqua:FiloSottile/mkcert",
+    "backend": "aqua"
+  },
+  {
+    "name": "mockery",
+    "full_name": "aqua:vektra/mockery",
+    "backend": "aqua"
+  },
+  {
+    "name": "mockolo",
+    "full_name": "github:uber/mockolo",
+    "backend": "github"
+  },
+  {
+    "name": "mold",
+    "full_name": "aqua:rui314/mold",
+    "backend": "aqua"
+  },
+  {
+    "name": "mongodb",
+    "full_name": "asdf:mise-plugins/mise-mongodb",
+    "backend": "asdf"
+  },
+  {
+    "name": "mongosh",
+    "full_name": "github:mongodb-js/mongosh",
+    "backend": "github"
+  },
+  {
+    "name": "mprocs",
+    "full_name": "aqua:pvolok/mprocs",
+    "backend": "aqua"
+  },
+  {
+    "name": "mssqldef",
+    "full_name": "aqua:sqldef/sqldef/mssqldef",
+    "backend": "aqua"
+  },
+  {
+    "name": "mvnd",
+    "full_name": "aqua:apache/maven-mvnd",
+    "backend": "aqua"
+  },
+  {
+    "name": "mysql",
+    "full_name": "asdf:mise-plugins/mise-mysql",
+    "backend": "asdf"
+  },
+  {
+    "name": "mysqldef",
+    "full_name": "aqua:sqldef/sqldef/mysqldef",
+    "backend": "aqua"
+  },
+  {
+    "name": "nancy",
+    "full_name": "aqua:sonatype-nexus-community/nancy",
+    "backend": "aqua"
+  },
+  {
+    "name": "navi",
+    "full_name": "aqua:denisidoro/navi",
+    "backend": "aqua"
+  },
+  {
+    "name": "neko",
+    "full_name": "github:HaxeFoundation/neko",
+    "backend": "github"
+  },
+  {
+    "name": "nelm",
+    "full_name": "aqua:werf/nelm",
+    "backend": "aqua"
+  },
+  {
+    "name": "neonctl",
+    "full_name": "aqua:neondatabase/neonctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "neovim",
+    "full_name": "vfox:mise-plugins/vfox-neovim",
+    "backend": "vfox"
+  },
+  {
+    "name": "nerdctl",
+    "full_name": "aqua:containerd/nerdctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "newrelic",
+    "full_name": "aqua:newrelic/newrelic-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "newrelic-cli",
+    "full_name": "aqua:newrelic/newrelic-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "nfpm",
+    "full_name": "aqua:goreleaser/nfpm",
+    "backend": "aqua"
+  },
+  {
+    "name": "ni",
+    "full_name": "npm:@antfu/ni",
+    "backend": "npm"
+  },
+  {
+    "name": "ninja",
+    "full_name": "aqua:ninja-build/ninja",
+    "backend": "aqua"
+  },
+  {
+    "name": "node",
+    "full_name": "core:node",
+    "backend": "core"
+  },
+  {
+    "name": "nomad",
+    "full_name": "aqua:hashicorp/nomad",
+    "backend": "aqua"
+  },
+  {
+    "name": "nomad-pack",
+    "full_name": "aqua:hashicorp/nomad-pack",
+    "backend": "aqua"
+  },
+  {
+    "name": "notation",
+    "full_name": "aqua:notaryproject/notation",
+    "backend": "aqua"
+  },
+  {
+    "name": "nova",
+    "full_name": "aqua:FairwindsOps/nova",
+    "backend": "aqua"
+  },
+  {
+    "name": "npm",
+    "full_name": "npm:npm",
+    "backend": "npm"
+  },
+  {
+    "name": "nsc",
+    "full_name": "github:nats-io/nsc",
+    "backend": "github"
+  },
+  {
+    "name": "numbat",
+    "full_name": "aqua:sharkdp/numbat",
+    "backend": "aqua"
+  },
+  {
+    "name": "oapi-codegen",
+    "full_name": "go:github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen",
+    "backend": "go"
+  },
+  {
+    "name": "oauth2c",
+    "full_name": "aqua:cloudentity/oauth2c",
+    "backend": "aqua"
+  },
+  {
+    "name": "oc",
+    "full_name": "asdf:mise-plugins/mise-oc",
+    "backend": "asdf"
+  },
+  {
+    "name": "oci",
+    "full_name": "asdf:mise-plugins/mise-oci",
+    "backend": "asdf"
+  },
+  {
+    "name": "octosql",
+    "full_name": "github:cube2222/octosql",
+    "backend": "github"
+  },
+  {
+    "name": "odin",
+    "full_name": "github:odin-lang/Odin[exe=odin]",
+    "backend": "github"
+  },
+  {
+    "name": "odo",
+    "full_name": "aqua:redhat-developer/odo",
+    "backend": "aqua"
+  },
+  {
+    "name": "oh-my-posh",
+    "full_name": "aqua:JanDeDobbeleer/oh-my-posh",
+    "backend": "aqua"
+  },
+  {
+    "name": "oha",
+    "full_name": "aqua:hatoo/oha",
+    "backend": "aqua"
+  },
+  {
+    "name": "okta-aws",
+    "full_name": "aqua:okta/okta-aws-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "okta-aws-cli",
+    "full_name": "aqua:okta/okta-aws-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "okteto",
+    "full_name": "aqua:okteto/okteto",
+    "backend": "aqua"
+  },
+  {
+    "name": "ollama",
+    "full_name": "aqua:ollama/ollama",
+    "backend": "aqua"
+  },
+  {
+    "name": "om",
+    "full_name": "aqua:pivotal-cf/om",
+    "backend": "aqua"
+  },
+  {
+    "name": "omnictl",
+    "full_name": "aqua:siderolabs/omni/omnictl",
+    "backend": "aqua"
+  },
+  {
+    "name": "onyx",
+    "full_name": "github:onyx-lang/onyx",
+    "backend": "github"
+  },
+  {
+    "name": "op",
+    "full_name": "vfox:mise-plugins/vfox-1password",
+    "backend": "vfox"
+  },
+  {
+    "name": "opa",
+    "full_name": "aqua:open-policy-agent/opa",
+    "backend": "aqua"
+  },
+  {
+    "name": "opam",
+    "full_name": "github:ocaml/opam[asset_pattern=opam-*-{gnu_arch}-{os}]",
+    "backend": "github"
+  },
+  {
+    "name": "openbao",
+    "full_name": "github:openbao/openbao[exe=bao]",
+    "backend": "github"
+  },
+  {
+    "name": "opencode",
+    "full_name": "aqua:anomalyco/opencode",
+    "backend": "aqua"
+  },
+  {
+    "name": "openfaas-cli",
+    "full_name": "aqua:openfaas/faas-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "opengrep",
+    "full_name": "aqua:opengrep/opengrep",
+    "backend": "aqua"
+  },
+  {
+    "name": "opensearch-cli",
+    "full_name": "github:opensearch-project/opensearch-cli",
+    "backend": "github"
+  },
+  {
+    "name": "openshift-install",
+    "full_name": "asdf:mise-plugins/mise-openshift-install",
+    "backend": "asdf"
+  },
+  {
+    "name": "opentofu",
+    "full_name": "aqua:opentofu/opentofu",
+    "backend": "aqua"
+  },
+  {
+    "name": "operator-sdk",
+    "full_name": "aqua:operator-framework/operator-sdk",
+    "backend": "aqua"
+  },
+  {
+    "name": "opsgenie-lamp",
+    "full_name": "github:opsgenie/opsgenie-lamp[bin=opsgenie-lamp]",
+    "backend": "github"
+  },
+  {
+    "name": "oras",
+    "full_name": "aqua:oras-project/oras",
+    "backend": "aqua"
+  },
+  {
+    "name": "osv-scanner",
+    "full_name": "aqua:google/osv-scanner",
+    "backend": "aqua"
+  },
+  {
+    "name": "overmind",
+    "full_name": "github:DarthSim/overmind",
+    "backend": "github"
+  },
+  {
+    "name": "oxipng",
+    "full_name": "aqua:oxipng/oxipng",
+    "backend": "aqua"
+  },
+  {
+    "name": "oxker",
+    "full_name": "aqua:mrjackwills/oxker",
+    "backend": "aqua"
+  },
+  {
+    "name": "oxlint",
+    "full_name": "aqua:oxc-project/oxc/oxlint",
+    "backend": "aqua"
+  },
+  {
+    "name": "pachctl",
+    "full_name": "aqua:pachyderm/pachyderm",
+    "backend": "aqua"
+  },
+  {
+    "name": "pack",
+    "full_name": "aqua:buildpacks/pack",
+    "backend": "aqua"
+  },
+  {
+    "name": "packer",
+    "full_name": "aqua:hashicorp/packer",
+    "backend": "aqua"
+  },
+  {
+    "name": "pandoc",
+    "full_name": "github:jgm/pandoc",
+    "backend": "github"
+  },
+  {
+    "name": "patat",
+    "full_name": "github:jaspervdj/patat",
+    "backend": "github"
+  },
+  {
+    "name": "pdm",
+    "full_name": "pipx:pdm",
+    "backend": "pipx"
+  },
+  {
+    "name": "peco",
+    "full_name": "aqua:peco/peco",
+    "backend": "aqua"
+  },
+  {
+    "name": "periphery",
+    "full_name": "aqua:peripheryapp/periphery",
+    "backend": "aqua"
+  },
+  {
+    "name": "perl",
+    "full_name": "aqua:skaji/relocatable-perl",
+    "backend": "aqua"
+  },
+  {
+    "name": "php",
+    "full_name": "asdf:mise-plugins/asdf-php",
+    "backend": "asdf"
+  },
+  {
+    "name": "pinact",
+    "full_name": "aqua:suzuki-shunsuke/pinact",
+    "backend": "aqua"
+  },
+  {
+    "name": "pint",
+    "full_name": "aqua:cloudflare/pint",
+    "backend": "aqua"
+  },
+  {
+    "name": "pipectl",
+    "full_name": "aqua:pipe-cd/pipecd/pipectl",
+    "backend": "aqua"
+  },
+  {
+    "name": "pipenv",
+    "full_name": "vfox:mise-plugins/vfox-pipenv",
+    "backend": "vfox"
+  },
+  {
+    "name": "pipx",
+    "full_name": "aqua:pypa/pipx",
+    "backend": "aqua"
+  },
+  {
+    "name": "pitchfork",
+    "full_name": "aqua:jdx/pitchfork",
+    "backend": "aqua"
+  },
+  {
+    "name": "pivnet",
+    "full_name": "aqua:pivotal-cf/pivnet-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "pixi",
+    "full_name": "github:prefix-dev/pixi",
+    "backend": "github"
+  },
+  {
+    "name": "pkl",
+    "full_name": "aqua:apple/pkl",
+    "backend": "aqua"
+  },
+  {
+    "name": "please",
+    "full_name": "aqua:thought-machine/please",
+    "backend": "aqua"
+  },
+  {
+    "name": "pluto",
+    "full_name": "aqua:FairwindsOps/pluto",
+    "backend": "aqua"
+  },
+  {
+    "name": "pnpm",
+    "full_name": "aqua:pnpm/pnpm",
+    "backend": "aqua"
+  },
+  {
+    "name": "podman",
+    "full_name": "github:containers/podman[matching=podman-remote]",
+    "backend": "github"
+  },
+  {
+    "name": "poetry",
+    "full_name": "vfox:mise-plugins/vfox-poetry",
+    "backend": "vfox"
+  },
+  {
+    "name": "polaris",
+    "full_name": "aqua:FairwindsOps/polaris",
+    "backend": "aqua"
+  },
+  {
+    "name": "popeye",
+    "full_name": "aqua:derailed/popeye",
+    "backend": "aqua"
+  },
+  {
+    "name": "postgres",
+    "full_name": "vfox:mise-plugins/vfox-postgres",
+    "backend": "vfox"
+  },
+  {
+    "name": "powerline-go",
+    "full_name": "aqua:justjanne/powerline-go",
+    "backend": "aqua"
+  },
+  {
+    "name": "powerpipe",
+    "full_name": "aqua:turbot/powerpipe",
+    "backend": "aqua"
+  },
+  {
+    "name": "powershell",
+    "full_name": "aqua:PowerShell/PowerShell",
+    "backend": "aqua"
+  },
+  {
+    "name": "powershell-core",
+    "full_name": "aqua:PowerShell/PowerShell",
+    "backend": "aqua"
+  },
+  {
+    "name": "pre-commit",
+    "full_name": "aqua:pre-commit/pre-commit",
+    "backend": "aqua"
+  },
+  {
+    "name": "prek",
+    "full_name": "aqua:j178/prek",
+    "backend": "aqua"
+  },
+  {
+    "name": "prettier",
+    "full_name": "npm:prettier",
+    "backend": "npm"
+  },
+  {
+    "name": "process-compose",
+    "full_name": "github:F1bonacc1/process-compose",
+    "backend": "github"
+  },
+  {
+    "name": "promtool",
+    "full_name": "aqua:prometheus/prometheus",
+    "backend": "aqua"
+  },
+  {
+    "name": "protobuf",
+    "full_name": "aqua:protocolbuffers/protobuf/protoc",
+    "backend": "aqua"
+  },
+  {
+    "name": "protoc",
+    "full_name": "aqua:protocolbuffers/protobuf/protoc",
+    "backend": "aqua"
+  },
+  {
+    "name": "protoc-gen-connect-go",
+    "full_name": "go:connectrpc.com/connect/cmd/protoc-gen-connect-go",
+    "backend": "go"
+  },
+  {
+    "name": "protoc-gen-go",
+    "full_name": "aqua:protocolbuffers/protobuf-go/protoc-gen-go",
+    "backend": "aqua"
+  },
+  {
+    "name": "protoc-gen-go-grpc",
+    "full_name": "aqua:grpc/grpc-go/protoc-gen-go-grpc",
+    "backend": "aqua"
+  },
+  {
+    "name": "protoc-gen-js",
+    "full_name": "github:protocolbuffers/protobuf-javascript[exe=protoc-gen-js]",
+    "backend": "github"
+  },
+  {
+    "name": "protoc-gen-validate",
+    "full_name": "aqua:bufbuild/protoc-gen-validate",
+    "backend": "aqua"
+  },
+  {
+    "name": "protolint",
+    "full_name": "aqua:yoheimuta/protolint",
+    "backend": "aqua"
+  },
+  {
+    "name": "psc-package",
+    "full_name": "github:purescript/psc-package",
+    "backend": "github"
+  },
+  {
+    "name": "psqldef",
+    "full_name": "aqua:sqldef/sqldef/psqldef",
+    "backend": "aqua"
+  },
+  {
+    "name": "pulumi",
+    "full_name": "aqua:pulumi/pulumi",
+    "backend": "aqua"
+  },
+  {
+    "name": "purerl",
+    "full_name": "github:purerl/purerl",
+    "backend": "github"
+  },
+  {
+    "name": "purescript",
+    "full_name": "github:purescript/purescript[exe=purs]",
+    "backend": "github"
+  },
+  {
+    "name": "purty",
+    "full_name": "npm:purty",
+    "backend": "npm"
+  },
+  {
+    "name": "python",
+    "full_name": "core:python",
+    "backend": "core"
+  },
+  {
+    "name": "qdns",
+    "full_name": "github:natesales/q",
+    "backend": "github"
+  },
+  {
+    "name": "qsv",
+    "full_name": "github:dathere/qsv",
+    "backend": "github"
+  },
+  {
+    "name": "quarkus",
+    "full_name": "github:quarkusio/quarkus",
+    "backend": "github"
+  },
+  {
+    "name": "railway",
+    "full_name": "github:railwayapp/cli[exe=railway]",
+    "backend": "github"
+  },
+  {
+    "name": "rancher",
+    "full_name": "aqua:rancher/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "rbac-lookup",
+    "full_name": "aqua:FairwindsOps/rbac-lookup",
+    "backend": "aqua"
+  },
+  {
+    "name": "rclone",
+    "full_name": "aqua:rclone/rclone",
+    "backend": "aqua"
+  },
+  {
+    "name": "rebar",
+    "full_name": "asdf:mise-plugins/mise-rebar",
+    "backend": "asdf"
+  },
+  {
+    "name": "reckoner",
+    "full_name": "github:FairwindsOps/reckoner",
+    "backend": "github"
+  },
+  {
+    "name": "redis",
+    "full_name": "vfox:mise-plugins/vfox-redis",
+    "backend": "vfox"
+  },
+  {
+    "name": "redo",
+    "full_name": "aqua:barthr/redo",
+    "backend": "aqua"
+  },
+  {
+    "name": "redpanda-connect",
+    "full_name": "aqua:redpanda-data/connect",
+    "backend": "aqua"
+  },
+  {
+    "name": "reg",
+    "full_name": "aqua:genuinetools/reg",
+    "backend": "aqua"
+  },
+  {
+    "name": "regal",
+    "full_name": "aqua:StyraInc/regal",
+    "backend": "aqua"
+  },
+  {
+    "name": "regctl",
+    "full_name": "aqua:regclient/regclient/regctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "regsync",
+    "full_name": "aqua:regclient/regclient/regsync",
+    "backend": "aqua"
+  },
+  {
+    "name": "restic",
+    "full_name": "aqua:restic/restic",
+    "backend": "aqua"
+  },
+  {
+    "name": "restish",
+    "full_name": "aqua:rest-sh/restish",
+    "backend": "aqua"
+  },
+  {
+    "name": "resvg",
+    "full_name": "aqua:linebender/resvg",
+    "backend": "aqua"
+  },
+  {
+    "name": "revive",
+    "full_name": "aqua:mgechev/revive",
+    "backend": "aqua"
+  },
+  {
+    "name": "rg",
+    "full_name": "aqua:BurntSushi/ripgrep",
+    "backend": "aqua"
+  },
+  {
+    "name": "richgo",
+    "full_name": "aqua:kyoh86/richgo",
+    "backend": "aqua"
+  },
+  {
+    "name": "ripgrep",
+    "full_name": "aqua:BurntSushi/ripgrep",
+    "backend": "aqua"
+  },
+  {
+    "name": "ripgrep-all",
+    "full_name": "aqua:phiresky/ripgrep-all",
+    "backend": "aqua"
+  },
+  {
+    "name": "ripsecrets",
+    "full_name": "aqua:sirwart/ripsecrets",
+    "backend": "aqua"
+  },
+  {
+    "name": "rke",
+    "full_name": "aqua:rancher/rke",
+    "backend": "aqua"
+  },
+  {
+    "name": "rmz",
+    "full_name": "aqua:SUPERCILEX/fuc/rmz",
+    "backend": "aqua"
+  },
+  {
+    "name": "ruby",
+    "full_name": "core:ruby",
+    "backend": "core"
+  },
+  {
+    "name": "ruff",
+    "full_name": "aqua:astral-sh/ruff",
+    "backend": "aqua"
+  },
+  {
+    "name": "rumdl",
+    "full_name": "github:rvben/rumdl",
+    "backend": "github"
+  },
+  {
+    "name": "rust",
+    "full_name": "core:rust",
+    "backend": "core"
+  },
+  {
+    "name": "rust-analyzer",
+    "full_name": "aqua:rust-lang/rust-analyzer",
+    "backend": "aqua"
+  },
+  {
+    "name": "rustic",
+    "full_name": "aqua:rustic-rs/rustic",
+    "backend": "aqua"
+  },
+  {
+    "name": "rye",
+    "full_name": "aqua:astral-sh/rye",
+    "backend": "aqua"
+  },
+  {
+    "name": "s5cmd",
+    "full_name": "aqua:peak/s5cmd",
+    "backend": "aqua"
+  },
+  {
+    "name": "saml2aws",
+    "full_name": "aqua:Versent/saml2aws",
+    "backend": "aqua"
+  },
+  {
+    "name": "sampler",
+    "full_name": "aqua:sqshq/sampler",
+    "backend": "aqua"
+  },
+  {
+    "name": "sbt",
+    "full_name": "asdf:mise-plugins/mise-sbt",
+    "backend": "asdf"
+  },
+  {
+    "name": "scala",
+    "full_name": "asdf:mise-plugins/mise-scala",
+    "backend": "asdf"
+  },
+  {
+    "name": "scala-cli",
+    "full_name": "github:VirtusLab/scala-cli",
+    "backend": "github"
+  },
+  {
+    "name": "scaleway",
+    "full_name": "aqua:scaleway/scaleway-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "scaleway-cli",
+    "full_name": "aqua:scaleway/scaleway-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "scalingo-cli",
+    "full_name": "aqua:Scalingo/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "scarb",
+    "full_name": "github:software-mansion/scarb",
+    "backend": "github"
+  },
+  {
+    "name": "sccache",
+    "full_name": "aqua:mozilla/sccache",
+    "backend": "aqua"
+  },
+  {
+    "name": "schemacrawler",
+    "full_name": "github:schemacrawler/SchemaCrawler[exe=schemacrawler.sh]",
+    "backend": "github"
+  },
+  {
+    "name": "scie-pants",
+    "full_name": "github:pantsbuild/scie-pants",
+    "backend": "github"
+  },
+  {
+    "name": "scooter",
+    "full_name": "aqua:thomasschafer/scooter",
+    "backend": "aqua"
+  },
+  {
+    "name": "scorecard",
+    "full_name": "aqua:ossf/scorecard",
+    "backend": "aqua"
+  },
+  {
+    "name": "sd",
+    "full_name": "aqua:chmln/sd",
+    "backend": "aqua"
+  },
+  {
+    "name": "semgrep",
+    "full_name": "pipx:semgrep",
+    "backend": "pipx"
+  },
+  {
+    "name": "semver",
+    "full_name": "vfox:mise-plugins/vfox-semver",
+    "backend": "vfox"
+  },
+  {
+    "name": "sentinel",
+    "full_name": "aqua:hashicorp/sentinel",
+    "backend": "aqua"
+  },
+  {
+    "name": "sentry",
+    "full_name": "aqua:getsentry/sentry-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "sentry-cli",
+    "full_name": "aqua:getsentry/sentry-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "serverless",
+    "full_name": "npm:serverless",
+    "backend": "npm"
+  },
+  {
+    "name": "setup-envtest",
+    "full_name": "aqua:kubernetes-sigs/controller-runtime/setup-envtest",
+    "backend": "aqua"
+  },
+  {
+    "name": "shell2http",
+    "full_name": "aqua:msoap/shell2http",
+    "backend": "aqua"
+  },
+  {
+    "name": "shellcheck",
+    "full_name": "aqua:koalaman/shellcheck",
+    "backend": "aqua"
+  },
+  {
+    "name": "shellspec",
+    "full_name": "aqua:shellspec/shellspec",
+    "backend": "aqua"
+  },
+  {
+    "name": "shfmt",
+    "full_name": "aqua:mvdan/sh",
+    "backend": "aqua"
+  },
+  {
+    "name": "signadot",
+    "full_name": "github:signadot/cli[exe=signadot]",
+    "backend": "github"
+  },
+  {
+    "name": "sinker",
+    "full_name": "aqua:plexsystems/sinker",
+    "backend": "aqua"
+  },
+  {
+    "name": "skaffold",
+    "full_name": "aqua:GoogleContainerTools/skaffold",
+    "backend": "aqua"
+  },
+  {
+    "name": "skate",
+    "full_name": "aqua:charmbracelet/skate",
+    "backend": "aqua"
+  },
+  {
+    "name": "skeema",
+    "full_name": "aqua:skeema/skeema",
+    "backend": "aqua"
+  },
+  {
+    "name": "sloth",
+    "full_name": "aqua:slok/sloth",
+    "backend": "aqua"
+  },
+  {
+    "name": "slsa-verifier",
+    "full_name": "aqua:slsa-framework/slsa-verifier",
+    "backend": "aqua"
+  },
+  {
+    "name": "smithy",
+    "full_name": "aqua:smithy-lang/smithy",
+    "backend": "aqua"
+  },
+  {
+    "name": "snyk",
+    "full_name": "aqua:snyk/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "soft-serve",
+    "full_name": "github:charmbracelet/soft-serve[exe=soft]",
+    "backend": "github"
+  },
+  {
+    "name": "solidity",
+    "full_name": "github:ethereum/solidity[exe=solc]",
+    "backend": "github"
+  },
+  {
+    "name": "sonar-scanner-cli",
+    "full_name": "aqua:SonarSource/sonar-scanner-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "sonobuoy",
+    "full_name": "github:vmware-tanzu/sonobuoy",
+    "backend": "github"
+  },
+  {
+    "name": "sops",
+    "full_name": "aqua:getsops/sops",
+    "backend": "aqua"
+  },
+  {
+    "name": "sopstool",
+    "full_name": "aqua:ibotta/sopstool",
+    "backend": "aqua"
+  },
+  {
+    "name": "soracom",
+    "full_name": "github:soracom/soracom-cli",
+    "backend": "github"
+  },
+  {
+    "name": "sourcery",
+    "full_name": "github:krzysztofzablocki/Sourcery[exe=bin/sourcery]",
+    "backend": "github"
+  },
+  {
+    "name": "spacectl",
+    "full_name": "aqua:spacelift-io/spacectl",
+    "backend": "aqua"
+  },
+  {
+    "name": "spago",
+    "full_name": "github:purescript/spago",
+    "backend": "github"
+  },
+  {
+    "name": "spark",
+    "full_name": "aqua:apache/spark",
+    "backend": "aqua"
+  },
+  {
+    "name": "specstory",
+    "full_name": "aqua:specstoryai/getspecstory",
+    "backend": "aqua"
+  },
+  {
+    "name": "spectral",
+    "full_name": "aqua:stoplightio/spectral",
+    "backend": "aqua"
+  },
+  {
+    "name": "spin",
+    "full_name": "aqua:spinnaker/spin",
+    "backend": "aqua"
+  },
+  {
+    "name": "spring-boot",
+    "full_name": "asdf:mise-plugins/mise-spring-boot",
+    "backend": "asdf"
+  },
+  {
+    "name": "spruce",
+    "full_name": "aqua:geofffranks/spruce",
+    "backend": "aqua"
+  },
+  {
+    "name": "sqlc",
+    "full_name": "github:sqlc-dev/sqlc",
+    "backend": "github"
+  },
+  {
+    "name": "sqlite",
+    "full_name": "asdf:mise-plugins/mise-sqlite",
+    "backend": "asdf"
+  },
+  {
+    "name": "sqlite3def",
+    "full_name": "aqua:sqldef/sqldef/sqlite3def",
+    "backend": "aqua"
+  },
+  {
+    "name": "sshi",
+    "full_name": "aqua:aakso/ssh-inscribe/sshi",
+    "backend": "aqua"
+  },
+  {
+    "name": "sshuttle",
+    "full_name": "pipx:sshuttle",
+    "backend": "pipx"
+  },
+  {
+    "name": "sst",
+    "full_name": "github:sst/sst",
+    "backend": "github"
+  },
+  {
+    "name": "stack",
+    "full_name": "aqua:commercialhaskell/stack",
+    "backend": "aqua"
+  },
+  {
+    "name": "starboard",
+    "full_name": "aqua:aquasecurity/starboard",
+    "backend": "aqua"
+  },
+  {
+    "name": "starknet-foundry",
+    "full_name": "github:foundry-rs/starknet-foundry[exe=snforge]",
+    "backend": "github"
+  },
+  {
+    "name": "starknet-foundry-sncast",
+    "full_name": "github:foundry-rs/starknet-foundry[exe=sncast]",
+    "backend": "github"
+  },
+  {
+    "name": "starship",
+    "full_name": "aqua:starship/starship",
+    "backend": "aqua"
+  },
+  {
+    "name": "staticcheck",
+    "full_name": "aqua:dominikh/go-tools/staticcheck",
+    "backend": "aqua"
+  },
+  {
+    "name": "steampipe",
+    "full_name": "aqua:turbot/steampipe",
+    "backend": "aqua"
+  },
+  {
+    "name": "step",
+    "full_name": "aqua:smallstep/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "stern",
+    "full_name": "aqua:stern/stern",
+    "backend": "aqua"
+  },
+  {
+    "name": "stripe",
+    "full_name": "aqua:stripe/stripe-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "stripe-cli",
+    "full_name": "aqua:stripe/stripe-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "stylua",
+    "full_name": "aqua:JohnnyMorganz/StyLua",
+    "backend": "aqua"
+  },
+  {
+    "name": "sui",
+    "full_name": "github:MystenLabs/sui",
+    "backend": "github"
+  },
+  {
+    "name": "supabase",
+    "full_name": "aqua:supabase/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "superfile",
+    "full_name": "aqua:yorukot/superfile",
+    "backend": "aqua"
+  },
+  {
+    "name": "superhtml",
+    "full_name": "github:kristoff-it/superhtml",
+    "backend": "github"
+  },
+  {
+    "name": "sver",
+    "full_name": "aqua:mitoma/sver",
+    "backend": "aqua"
+  },
+  {
+    "name": "svu",
+    "full_name": "aqua:caarlos0/svu",
+    "backend": "aqua"
+  },
+  {
+    "name": "swag",
+    "full_name": "aqua:swaggo/swag",
+    "backend": "aqua"
+  },
+  {
+    "name": "swift",
+    "full_name": "core:swift",
+    "backend": "core"
+  },
+  {
+    "name": "swift-package-list",
+    "full_name": "github:FelixHerrmann/swift-package-list",
+    "backend": "github"
+  },
+  {
+    "name": "swiftformat",
+    "full_name": "github:nicklockwood/SwiftFormat[rename_exe=swiftformat]",
+    "backend": "github"
+  },
+  {
+    "name": "swiftgen",
+    "full_name": "github:SwiftGen/SwiftGen[exe=swiftgen/bin/swiftgen]",
+    "backend": "github"
+  },
+  {
+    "name": "swiftlint",
+    "full_name": "aqua:realm/SwiftLint",
+    "backend": "aqua"
+  },
+  {
+    "name": "syft",
+    "full_name": "aqua:anchore/syft",
+    "backend": "aqua"
+  },
+  {
+    "name": "tailpipe",
+    "full_name": "aqua:turbot/tailpipe",
+    "backend": "aqua"
+  },
+  {
+    "name": "talhelper",
+    "full_name": "aqua:budimanjojo/talhelper",
+    "backend": "aqua"
+  },
+  {
+    "name": "talos",
+    "full_name": "aqua:siderolabs/talos",
+    "backend": "aqua"
+  },
+  {
+    "name": "talosctl",
+    "full_name": "aqua:siderolabs/talos",
+    "backend": "aqua"
+  },
+  {
+    "name": "tanka",
+    "full_name": "aqua:grafana/tanka",
+    "backend": "aqua"
+  },
+  {
+    "name": "tanzu",
+    "full_name": "github:vmware-tanzu/tanzu-cli[rename_exe=tanzu]",
+    "backend": "github"
+  },
+  {
+    "name": "taplo",
+    "full_name": "aqua:tamasfe/taplo",
+    "backend": "aqua"
+  },
+  {
+    "name": "task",
+    "full_name": "aqua:go-task/task",
+    "backend": "aqua"
+  },
+  {
+    "name": "tbls",
+    "full_name": "aqua:k1LoW/tbls",
+    "backend": "aqua"
+  },
+  {
+    "name": "tctl",
+    "full_name": "aqua:temporalio/tctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "tekton",
+    "full_name": "aqua:tektoncd/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "tekton-cli",
+    "full_name": "aqua:tektoncd/cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "teleport-community",
+    "full_name": "asdf:mise-plugins/mise-teleport-community",
+    "backend": "asdf"
+  },
+  {
+    "name": "teleport-ent",
+    "full_name": "asdf:mise-plugins/mise-teleport-ent",
+    "backend": "asdf"
+  },
+  {
+    "name": "telepresence",
+    "full_name": "aqua:telepresenceio/telepresence",
+    "backend": "aqua"
+  },
+  {
+    "name": "television",
+    "full_name": "aqua:alexpasmantier/television",
+    "backend": "aqua"
+  },
+  {
+    "name": "teller",
+    "full_name": "aqua:tellerops/teller",
+    "backend": "aqua"
+  },
+  {
+    "name": "temporal",
+    "full_name": "aqua:temporalio/temporal",
+    "backend": "aqua"
+  },
+  {
+    "name": "terradozer",
+    "full_name": "aqua:jckuester/terradozer",
+    "backend": "aqua"
+  },
+  {
+    "name": "terraform",
+    "full_name": "aqua:hashicorp/terraform",
+    "backend": "aqua"
+  },
+  {
+    "name": "terraform-docs",
+    "full_name": "aqua:terraform-docs/terraform-docs",
+    "backend": "aqua"
+  },
+  {
+    "name": "terraform-ls",
+    "full_name": "aqua:hashicorp/terraform-ls",
+    "backend": "aqua"
+  },
+  {
+    "name": "terraform-lsp",
+    "full_name": "aqua:juliosueiras/terraform-lsp",
+    "backend": "aqua"
+  },
+  {
+    "name": "terraform-validator",
+    "full_name": "aqua:thazelart/terraform-validator",
+    "backend": "aqua"
+  },
+  {
+    "name": "terraformer",
+    "full_name": "aqua:GoogleCloudPlatform/terraformer",
+    "backend": "aqua"
+  },
+  {
+    "name": "terragrunt",
+    "full_name": "aqua:gruntwork-io/terragrunt",
+    "backend": "aqua"
+  },
+  {
+    "name": "terramate",
+    "full_name": "aqua:terramate-io/terramate",
+    "backend": "aqua"
+  },
+  {
+    "name": "terrascan",
+    "full_name": "aqua:tenable/terrascan",
+    "backend": "aqua"
+  },
+  {
+    "name": "tf-summarize",
+    "full_name": "aqua:dineshba/tf-summarize",
+    "backend": "aqua"
+  },
+  {
+    "name": "tfc-agent",
+    "full_name": "aqua:hashicorp/tfc-agent",
+    "backend": "aqua"
+  },
+  {
+    "name": "tfctl",
+    "full_name": "aqua:flux-iac/tofu-controller/tfctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "tfenv",
+    "full_name": "aqua:tfutils/tfenv",
+    "backend": "aqua"
+  },
+  {
+    "name": "tflint",
+    "full_name": "aqua:terraform-linters/tflint",
+    "backend": "aqua"
+  },
+  {
+    "name": "tfmigrate",
+    "full_name": "aqua:minamijoyo/tfmigrate",
+    "backend": "aqua"
+  },
+  {
+    "name": "tfnotify",
+    "full_name": "aqua:mercari/tfnotify",
+    "backend": "aqua"
+  },
+  {
+    "name": "tfsec",
+    "full_name": "aqua:aquasecurity/tfsec",
+    "backend": "aqua"
+  },
+  {
+    "name": "tfstate-lookup",
+    "full_name": "aqua:fujiwara/tfstate-lookup",
+    "backend": "aqua"
+  },
+  {
+    "name": "tfswitch",
+    "full_name": "github:warrensbox/terraform-switcher[exe=tfswitch]",
+    "backend": "github"
+  },
+  {
+    "name": "tfupdate",
+    "full_name": "aqua:minamijoyo/tfupdate",
+    "backend": "aqua"
+  },
+  {
+    "name": "tilt",
+    "full_name": "aqua:tilt-dev/tilt",
+    "backend": "aqua"
+  },
+  {
+    "name": "timoni",
+    "full_name": "aqua:stefanprodan/timoni",
+    "backend": "aqua"
+  },
+  {
+    "name": "tiny",
+    "full_name": "asdf:mise-plugins/mise-tiny",
+    "backend": "asdf"
+  },
+  {
+    "name": "tinymist",
+    "full_name": "aqua:Myriad-Dreamin/tinymist",
+    "backend": "aqua"
+  },
+  {
+    "name": "tinytex",
+    "full_name": "asdf:mise-plugins/mise-tinytex",
+    "backend": "asdf"
+  },
+  {
+    "name": "titan",
+    "full_name": "github:titan-data/titan",
+    "backend": "github"
+  },
+  {
+    "name": "tlrc",
+    "full_name": "aqua:tldr-pages/tlrc",
+    "backend": "aqua"
+  },
+  {
+    "name": "tmux",
+    "full_name": "github:tmux/tmux-builds",
+    "backend": "github"
+  },
+  {
+    "name": "tokei",
+    "full_name": "cargo:tokei",
+    "backend": "cargo"
+  },
+  {
+    "name": "tombi",
+    "full_name": "aqua:tombi-toml/tombi",
+    "backend": "aqua"
+  },
+  {
+    "name": "tomcat",
+    "full_name": "aqua:apache/tomcat",
+    "backend": "aqua"
+  },
+  {
+    "name": "tonnage",
+    "full_name": "github:elementalvoid/tonnage",
+    "backend": "github"
+  },
+  {
+    "name": "traefik",
+    "full_name": "github:traefik/traefik",
+    "backend": "github"
+  },
+  {
+    "name": "transifex",
+    "full_name": "github:transifex/cli[exe=tx]",
+    "backend": "github"
+  },
+  {
+    "name": "trdsql",
+    "full_name": "aqua:noborus/trdsql",
+    "backend": "aqua"
+  },
+  {
+    "name": "tree-sitter",
+    "full_name": "aqua:tree-sitter/tree-sitter",
+    "backend": "aqua"
+  },
+  {
+    "name": "tridentctl",
+    "full_name": "aqua:NetApp/trident/tridentctl",
+    "backend": "aqua"
+  },
+  {
+    "name": "trivy",
+    "full_name": "aqua:aquasecurity/trivy",
+    "backend": "aqua"
+  },
+  {
+    "name": "trufflehog",
+    "full_name": "aqua:trufflesecurity/trufflehog",
+    "backend": "aqua"
+  },
+  {
+    "name": "trunk",
+    "full_name": "npm:@trunkio/launcher",
+    "backend": "npm"
+  },
+  {
+    "name": "trzsz-ssh",
+    "full_name": "aqua:trzsz/trzsz-ssh",
+    "backend": "aqua"
+  },
+  {
+    "name": "tssh",
+    "full_name": "aqua:trzsz/trzsz-ssh",
+    "backend": "aqua"
+  },
+  {
+    "name": "tsuru",
+    "full_name": "github:tsuru/tsuru-client[exe=tsuru]",
+    "backend": "github"
+  },
+  {
+    "name": "ttyd",
+    "full_name": "aqua:tsl0922/ttyd",
+    "backend": "aqua"
+  },
+  {
+    "name": "tuist",
+    "full_name": "aqua:tuist/tuist",
+    "backend": "aqua"
+  },
+  {
+    "name": "tusd",
+    "full_name": "github:tus/tusd",
+    "backend": "github"
+  },
+  {
+    "name": "ty",
+    "full_name": "aqua:astral-sh/ty",
+    "backend": "aqua"
+  },
+  {
+    "name": "typos",
+    "full_name": "aqua:crate-ci/typos",
+    "backend": "aqua"
+  },
+  {
+    "name": "typst",
+    "full_name": "aqua:typst/typst",
+    "backend": "aqua"
+  },
+  {
+    "name": "typstyle",
+    "full_name": "aqua:Enter-tainer/typstyle",
+    "backend": "aqua"
+  },
+  {
+    "name": "uaa",
+    "full_name": "aqua:cloudfoundry/uaa-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "uaa-cli",
+    "full_name": "aqua:cloudfoundry/uaa-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "ubi",
+    "full_name": "aqua:houseabsolute/ubi",
+    "backend": "aqua"
+  },
+  {
+    "name": "unison",
+    "full_name": "github:unisonweb/unison",
+    "backend": "github"
+  },
+  {
+    "name": "upctl",
+    "full_name": "aqua:UpCloudLtd/upcloud-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "updatecli",
+    "full_name": "aqua:updatecli/updatecli",
+    "backend": "aqua"
+  },
+  {
+    "name": "upt",
+    "full_name": "github:sigoden/upt",
+    "backend": "github"
+  },
+  {
+    "name": "upx",
+    "full_name": "aqua:upx/upx",
+    "backend": "aqua"
+  },
+  {
+    "name": "usage",
+    "full_name": "aqua:jdx/usage",
+    "backend": "aqua"
+  },
+  {
+    "name": "usql",
+    "full_name": "aqua:xo/usql",
+    "backend": "aqua"
+  },
+  {
+    "name": "uv",
+    "full_name": "aqua:astral-sh/uv",
+    "backend": "aqua"
+  },
+  {
+    "name": "v",
+    "full_name": "asdf:mise-plugins/mise-v",
+    "backend": "asdf"
+  },
+  {
+    "name": "vacuum",
+    "full_name": "aqua:daveshanley/vacuum",
+    "backend": "aqua"
+  },
+  {
+    "name": "vale",
+    "full_name": "aqua:errata-ai/vale",
+    "backend": "aqua"
+  },
+  {
+    "name": "vals",
+    "full_name": "aqua:helmfile/vals",
+    "backend": "aqua"
+  },
+  {
+    "name": "vault",
+    "full_name": "aqua:hashicorp/vault",
+    "backend": "aqua"
+  },
+  {
+    "name": "vcluster",
+    "full_name": "aqua:loft-sh/vcluster",
+    "backend": "aqua"
+  },
+  {
+    "name": "velad",
+    "full_name": "github:kubevela/velad",
+    "backend": "github"
+  },
+  {
+    "name": "velero",
+    "full_name": "aqua:vmware-tanzu/velero",
+    "backend": "aqua"
+  },
+  {
+    "name": "vendir",
+    "full_name": "aqua:carvel-dev/vendir",
+    "backend": "aqua"
+  },
+  {
+    "name": "venom",
+    "full_name": "aqua:ovh/venom",
+    "backend": "aqua"
+  },
+  {
+    "name": "vespa-cli",
+    "full_name": "github:vespa-engine/vespa",
+    "backend": "github"
+  },
+  {
+    "name": "vfox",
+    "full_name": "aqua:version-fox/vfox",
+    "backend": "aqua"
+  },
+  {
+    "name": "vhs",
+    "full_name": "aqua:charmbracelet/vhs",
+    "backend": "aqua"
+  },
+  {
+    "name": "victoria-metrics",
+    "full_name": "aqua:VictoriaMetrics/VictoriaMetrics/victoria-metrics",
+    "backend": "aqua"
+  },
+  {
+    "name": "viddy",
+    "full_name": "aqua:sachaos/viddy",
+    "backend": "aqua"
+  },
+  {
+    "name": "vim",
+    "full_name": "asdf:mise-plugins/mise-vim",
+    "backend": "asdf"
+  },
+  {
+    "name": "vivid",
+    "full_name": "aqua:sharkdp/vivid",
+    "backend": "aqua"
+  },
+  {
+    "name": "vlang",
+    "full_name": "vfox:mise-plugins/vfox-vlang",
+    "backend": "vfox"
+  },
+  {
+    "name": "vultr",
+    "full_name": "github:vultr/vultr-cli",
+    "backend": "github"
+  },
+  {
+    "name": "vultr-cli",
+    "full_name": "github:vultr/vultr-cli",
+    "backend": "github"
+  },
+  {
+    "name": "wait-for-gh-rate-limit",
+    "full_name": "github:jdx/wait-for-gh-rate-limit",
+    "backend": "github"
+  },
+  {
+    "name": "wash",
+    "full_name": "aqua:wasmCloud/wasmCloud/wash",
+    "backend": "aqua"
+  },
+  {
+    "name": "wasm4",
+    "full_name": "aqua:aduros/wasm4",
+    "backend": "aqua"
+  },
+  {
+    "name": "wasmer",
+    "full_name": "aqua:wasmerio/wasmer",
+    "backend": "aqua"
+  },
+  {
+    "name": "wasmtime",
+    "full_name": "aqua:bytecodealliance/wasmtime",
+    "backend": "aqua"
+  },
+  {
+    "name": "watchexec",
+    "full_name": "aqua:watchexec/watchexec",
+    "backend": "aqua"
+  },
+  {
+    "name": "waypoint",
+    "full_name": "aqua:hashicorp/waypoint",
+    "backend": "aqua"
+  },
+  {
+    "name": "weave-gitops",
+    "full_name": "github:weaveworks/weave-gitops[exe=gitops]",
+    "backend": "github"
+  },
+  {
+    "name": "websocat",
+    "full_name": "aqua:vi/websocat",
+    "backend": "aqua"
+  },
+  {
+    "name": "werf",
+    "full_name": "aqua:werf/werf",
+    "backend": "aqua"
+  },
+  {
+    "name": "wrangler",
+    "full_name": "npm:wrangler",
+    "backend": "npm"
+  },
+  {
+    "name": "wren",
+    "full_name": "aqua:wren-lang/wren-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "wren-cli",
+    "full_name": "aqua:wren-lang/wren-cli",
+    "backend": "aqua"
+  },
+  {
+    "name": "wtfutil",
+    "full_name": "aqua:wtfutil/wtf",
+    "backend": "aqua"
+  },
+  {
+    "name": "xc",
+    "full_name": "aqua:joerdav/xc",
+    "backend": "aqua"
+  },
+  {
+    "name": "xcbeautify",
+    "full_name": "aqua:cpisciotta/xcbeautify",
+    "backend": "aqua"
+  },
+  {
+    "name": "xchtmlreport",
+    "full_name": "github:XCTestHTMLReport/XCTestHTMLReport",
+    "backend": "github"
+  },
+  {
+    "name": "xcodegen",
+    "full_name": "github:yonaskolb/XcodeGen",
+    "backend": "github"
+  },
+  {
+    "name": "xcodes",
+    "full_name": "aqua:XcodesOrg/xcodes",
+    "backend": "aqua"
+  },
+  {
+    "name": "xcresultparser",
+    "full_name": "github:a7ex/xcresultparser",
+    "backend": "github"
+  },
+  {
+    "name": "xcsift",
+    "full_name": "github:ldomaradzki/xcsift",
+    "backend": "github"
+  },
+  {
+    "name": "xh",
+    "full_name": "aqua:ducaale/xh",
+    "backend": "aqua"
+  },
+  {
+    "name": "xxh",
+    "full_name": "pipx:xxh-xxh",
+    "backend": "pipx"
+  },
+  {
+    "name": "yamlfmt",
+    "full_name": "aqua:google/yamlfmt",
+    "backend": "aqua"
+  },
+  {
+    "name": "yamllint",
+    "full_name": "pipx:yamllint",
+    "backend": "pipx"
+  },
+  {
+    "name": "yamlscript",
+    "full_name": "aqua:yaml/yamlscript",
+    "backend": "aqua"
+  },
+  {
+    "name": "yarn",
+    "full_name": "vfox:mise-plugins/vfox-yarn",
+    "backend": "vfox"
+  },
+  {
+    "name": "yazi",
+    "full_name": "aqua:sxyazi/yazi",
+    "backend": "aqua"
+  },
+  {
+    "name": "yj",
+    "full_name": "aqua:sclevine/yj",
+    "backend": "aqua"
+  },
+  {
+    "name": "yor",
+    "full_name": "aqua:bridgecrewio/yor",
+    "backend": "aqua"
+  },
+  {
+    "name": "youtube-dl",
+    "full_name": "aqua:ytdl-org/ytdl-nightly",
+    "backend": "aqua"
+  },
+  {
+    "name": "yq",
+    "full_name": "aqua:mikefarah/yq",
+    "backend": "aqua"
+  },
+  {
+    "name": "yt-dlp",
+    "full_name": "github:yt-dlp/yt-dlp[rename_exe=yt-dlp]",
+    "backend": "github"
+  },
+  {
+    "name": "ytt",
+    "full_name": "aqua:carvel-dev/ytt",
+    "backend": "aqua"
+  },
+  {
+    "name": "zarf",
+    "full_name": "aqua:zarf-dev/zarf",
+    "backend": "aqua"
+  },
+  {
+    "name": "zbctl",
+    "full_name": "npm:zbctl",
+    "backend": "npm"
+  },
+  {
+    "name": "zellij",
+    "full_name": "aqua:zellij-org/zellij",
+    "backend": "aqua"
+  },
+  {
+    "name": "zephyr",
+    "full_name": "aqua:MaybeJustJames/zephyr",
+    "backend": "aqua"
+  },
+  {
+    "name": "zig",
+    "full_name": "core:zig",
+    "backend": "core"
+  },
+  {
+    "name": "zigmod",
+    "full_name": "aqua:nektro/zigmod",
+    "backend": "aqua"
+  },
+  {
+    "name": "zizmor",
+    "full_name": "aqua:zizmorcore/zizmor",
+    "backend": "aqua"
+  },
+  {
+    "name": "zls",
+    "full_name": "aqua:zigtools/zls",
+    "backend": "aqua"
+  },
+  {
+    "name": "zola",
+    "full_name": "aqua:getzola/zola",
+    "backend": "aqua"
+  },
+  {
+    "name": "zoxide",
+    "full_name": "aqua:ajeetdsouza/zoxide",
+    "backend": "aqua"
+  },
+  {
+    "name": "zprint",
+    "full_name": "aqua:kkinnear/zprint",
+    "backend": "aqua"
+  }
+]

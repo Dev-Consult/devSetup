@@ -30,12 +30,12 @@ pub struct RegistryTool {
 pub struct RegistryPreset {
     pub id: String,
     pub name: String,
-    pub tool: String,             // "npm" | "pip" | "go" | "cargo"
-    pub registry_url: String,     // e.g. "https://artifactory.mycorp.internal/artifactory/api/npm/virtual"
+    pub tool: String,         // "npm" | "pip" | "go" | "cargo"
+    pub registry_url: String, // e.g. "https://artifactory.mycorp.internal/artifactory/api/npm/virtual"
     pub token: Option<String>,
     pub ca_cert_path: Option<String>,
     pub active: bool,
-    pub is_local_secret: bool,    // stored in .mise.local.toml
+    pub is_local_secret: bool, // stored in .mise.local.toml
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -78,7 +78,7 @@ pub struct ProjectSyncStatus {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ConfigFileInfo {
-    pub file_type: String,       // "global" | "project" | "local_secret"
+    pub file_type: String, // "global" | "project" | "local_secret"
     pub path: String,
     pub exists: bool,
     pub content: String,

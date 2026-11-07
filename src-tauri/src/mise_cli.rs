@@ -9,11 +9,9 @@ impl MiseCli {
     pub fn find_binary() -> Result<PathBuf, String> {
         // 1. Check PATH
         if let Ok(output) = Command::new("which").arg("mise").output() {
-            if output.status.success() {
-                let path_str = String::from_utf8_lossy(&output.stdout).trim().to_string();
-                if !path_str.is_empty() {
-                    return Ok(PathBuf::from(path_str));
-                }
+            let path_str = String::from_utf8_lossy(&output.stdout).trim().to_string();
+            if output.status.success() && !path_str.is_empty() {
+                return Ok(PathBuf::from(path_str));
             }
         }
 
@@ -245,7 +243,7 @@ impl MiseCli {
             return Err(String::from_utf8_lossy(&output.stderr).to_string());
         }
 
-        Ok(format!("All workspace tools have been successfully synchronized!"))
+        Ok("All workspace tools have been successfully synchronized!".to_string())
     }
 
     pub fn get_config_files(workspace: Option<&str>) -> Result<Vec<crate::models::ConfigFileInfo>, String> {
@@ -310,6 +308,35 @@ impl MiseCli {
         std::fs::write(path, content)
             .map_err(|e| format!("Failed to write to {}: {}", file_path, e))?;
         Ok(format!("Configuration successfully saved to {}", file_path))
+    }
+
+    pub fn uninstall_tool(tool: &str, version: &str) -> Result<String, String> {
+        let binary = Self::find_binary()?;
+        let mut cmd = Command::new(binary);
+        cmd.arg("uninstall").arg(format!("{}@{}", tool, version));
+
+        let output = cmd.output().map_err(|e| format!("Failed to run mise uninstall: {}", e))?;
+        if !output.status.success() {
+            return Err(String::from_utf8_lossy(&output.stderr).to_string());
+        }
+        Ok(format!("Successfully uninstalled {}@{}", tool, version))
+    }
+
+    pub fn prune_tools() -> Result<String, String> {
+        let binary = Self::find_binary()?;
+        let mut cmd = Command::new(binary);
+        cmd.arg("prune").arg("-y");
+
+        let output = cmd.output().map_err(|e| format!("Failed to run mise prune: {}", e))?;
+        if !output.status.success() {
+            return Err(String::from_utf8_lossy(&output.stderr).to_string());
+        }
+        let stdout = String::from_utf8_lossy(&output.stdout);
+        Ok(if stdout.trim().is_empty() {
+            "No unreferenced tool versions to prune. Everything is clean!".to_string()
+        } else {
+            stdout.to_string()
+        })
     }
 }
 

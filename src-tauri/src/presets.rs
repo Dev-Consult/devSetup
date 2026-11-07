@@ -11,7 +11,9 @@ impl PresetsManager {
                 id: "artifactory-npm".to_string(),
                 name: "JFrog Artifactory (NPM)".to_string(),
                 tool: "npm".to_string(),
-                registry_url: "https://artifactory.mycorp.internal/artifactory/api/npm/npm-virtual/".to_string(),
+                registry_url:
+                    "https://artifactory.mycorp.internal/artifactory/api/npm/npm-virtual/"
+                        .to_string(),
                 token: None,
                 ca_cert_path: Some("/etc/ssl/certs/corp-ca.pem".to_string()),
                 active: false,
@@ -21,7 +23,9 @@ impl PresetsManager {
                 id: "artifactory-pip".to_string(),
                 name: "JFrog Artifactory (PyPI/pip)".to_string(),
                 tool: "pip".to_string(),
-                registry_url: "https://artifactory.mycorp.internal/artifactory/api/pypi/pypi-virtual/simple".to_string(),
+                registry_url:
+                    "https://artifactory.mycorp.internal/artifactory/api/pypi/pypi-virtual/simple"
+                        .to_string(),
                 token: None,
                 ca_cert_path: None,
                 active: false,
@@ -31,7 +35,8 @@ impl PresetsManager {
                 id: "artifactory-go".to_string(),
                 name: "JFrog Artifactory (Go Proxy)".to_string(),
                 tool: "go".to_string(),
-                registry_url: "https://artifactory.mycorp.internal/artifactory/api/go/go-virtual".to_string(),
+                registry_url: "https://artifactory.mycorp.internal/artifactory/api/go/go-virtual"
+                    .to_string(),
                 token: None,
                 ca_cert_path: None,
                 active: false,
@@ -84,7 +89,10 @@ impl PresetsManager {
 
         match preset.tool.as_str() {
             "npm" | "node" => {
-                content.push_str(&format!("NPM_CONFIG_REGISTRY = \"{}\"\n", preset.registry_url));
+                content.push_str(&format!(
+                    "NPM_CONFIG_REGISTRY = \"{}\"\n",
+                    preset.registry_url
+                ));
                 if let Some(token) = auth_token {
                     content.push_str(&format!("NPM_TOKEN = \"{}\"\n", token));
                 }
@@ -106,7 +114,10 @@ impl PresetsManager {
 
         fs::write(path, content).map_err(|e| format!("Failed to write to {}: {}", file_path, e))?;
 
-        Ok(format!("Successfully applied preset `{}` to {}", preset.name, file_path))
+        Ok(format!(
+            "Successfully applied preset `{}` to {}",
+            preset.name, file_path
+        ))
     }
 }
 

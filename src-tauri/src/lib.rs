@@ -81,7 +81,21 @@ fn save_config(file_path: String, content: String) -> Result<String, String> {
 }
 
 #[tauri::command]
-fn install_tool(tool: String, version: String, workspace: Option<String>) -> Result<String, String> {
+fn uninstall_tool(tool: String, version: String) -> Result<String, String> {
+    MiseCli::uninstall_tool(&tool, &version)
+}
+
+#[tauri::command]
+fn prune_tools() -> Result<String, String> {
+    MiseCli::prune_tools()
+}
+
+#[tauri::command]
+fn install_tool(
+    tool: String,
+    version: String,
+    workspace: Option<String>,
+) -> Result<String, String> {
     let binary = MiseCli::find_binary()?;
     let mut cmd = Command::new(binary);
     if let Some(ref dir) = workspace {
@@ -93,11 +107,16 @@ fn install_tool(tool: String, version: String, workspace: Option<String>) -> Res
     }
     cmd.arg(format!("{}@{}", tool, version));
 
-    let output = cmd.output().map_err(|e| format!("Failed to install tool: {}", e))?;
+    let output = cmd
+        .output()
+        .map_err(|e| format!("Failed to install tool: {}", e))?;
     if !output.status.success() {
         return Err(String::from_utf8_lossy(&output.stderr).to_string());
     }
-    Ok(format!("Successfully installed and configured {}@{}", tool, version))
+    Ok(format!(
+        "Successfully installed and configured {}@{}",
+        tool, version
+    ))
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
@@ -125,6 +144,8 @@ pub fn run() {
             sync_workspace,
             get_config_files,
             save_config,
+            uninstall_tool,
+            prune_tools,
             install_tool
         ])
         .run(tauri::generate_context!())

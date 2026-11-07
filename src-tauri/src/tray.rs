@@ -1,15 +1,33 @@
 use tauri::{
+    AppHandle, Manager,
     menu::{Menu, MenuItem},
     tray::{MouseButton, MouseButtonState, TrayIconBuilder, TrayIconEvent},
-    AppHandle, Manager,
 };
 
 pub fn create_tray(app: &AppHandle) -> Result<(), Box<dyn std::error::Error>> {
     let show_hide = MenuItem::with_id(app, "toggle", "Show/Hide Window", true, None::<&str>)?;
-    let status = MenuItem::with_id(app, "status", "Mise Status: 🟢 All Tools In Sync", false, None::<&str>)?;
+    let status = MenuItem::with_id(
+        app,
+        "status",
+        "Mise Status: 🟢 All Tools In Sync",
+        false,
+        None::<&str>,
+    )?;
     let sep = MenuItem::with_id(app, "sep", "---", false, None::<&str>)?;
-    let preset_artifactory = MenuItem::with_id(app, "preset_artifactory", "Switch to Corporate Artifactory", true, None::<&str>)?;
-    let preset_public = MenuItem::with_id(app, "preset_public", "Switch to Public NPM", true, None::<&str>)?;
+    let preset_artifactory = MenuItem::with_id(
+        app,
+        "preset_artifactory",
+        "Switch to Corporate Artifactory",
+        true,
+        None::<&str>,
+    )?;
+    let preset_public = MenuItem::with_id(
+        app,
+        "preset_public",
+        "Switch to Public NPM",
+        true,
+        None::<&str>,
+    )?;
     let quit = MenuItem::with_id(app, "quit", "Quit Mise Desktop", true, None::<&str>)?;
 
     let menu = Menu::with_items(

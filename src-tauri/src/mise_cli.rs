@@ -7,26 +7,61 @@ pub struct MiseCli;
 
 impl MiseCli {
     pub fn find_binary() -> Result<PathBuf, String> {
-        // 1. Check PATH
-        if let Ok(output) = Command::new("which").arg("mise").output() {
-            let path_str = String::from_utf8_lossy(&output.stdout).trim().to_string();
+        // 1. Check PATH via platform command
+        #[cfg(target_os = "windows")]
+        let check_cmd = ("where", "mise");
+        #[cfg(not(target_os = "windows"))]
+        let check_cmd = ("which", "mise");
+
+        if let Ok(output) = Command::new(check_cmd.0).arg(check_cmd.1).output() {
+            let path_str = String::from_utf8_lossy(&output.stdout)
+                .lines()
+                .next()
+                .unwrap_or("")
+                .trim()
+                .to_string();
             if output.status.success() && !path_str.is_empty() {
                 return Ok(PathBuf::from(path_str));
             }
         }
 
-        // 2. Check canonical home paths
-        if let Ok(home) = std::env::var("HOME") {
-            let candidates = [
-                format!("{}/.local/bin/mise", home),
-                format!("{}/.cargo/bin/mise", home),
-                "/usr/local/bin/mise".to_string(),
-                "/usr/bin/mise".to_string(),
-            ];
-            for candidate in &candidates {
-                let p = Path::new(candidate);
+        // 2. Check canonical platform directories
+        #[cfg(target_os = "windows")]
+        {
+            if let Ok(local_app_data) = std::env::var("LOCALAPPDATA") {
+                let p = Path::new(&local_app_data)
+                    .join("mise")
+                    .join("bin")
+                    .join("mise.exe");
                 if p.is_file() {
-                    return Ok(p.to_path_buf());
+                    return Ok(p);
+                }
+            }
+            if let Ok(user_profile) = std::env::var("USERPROFILE") {
+                let p = Path::new(&user_profile)
+                    .join(".local")
+                    .join("bin")
+                    .join("mise.exe");
+                if p.is_file() {
+                    return Ok(p);
+                }
+            }
+        }
+
+        #[cfg(not(target_os = "windows"))]
+        {
+            if let Ok(home) = std::env::var("HOME") {
+                let candidates = [
+                    format!("{}/.local/bin/mise", home),
+                    format!("{}/.cargo/bin/mise", home),
+                    "/usr/local/bin/mise".to_string(),
+                    "/usr/bin/mise".to_string(),
+                ];
+                for candidate in &candidates {
+                    let p = Path::new(candidate);
+                    if p.is_file() {
+                        return Ok(p.to_path_buf());
+                    }
                 }
             }
         }

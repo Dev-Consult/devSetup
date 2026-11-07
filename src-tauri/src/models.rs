@@ -83,3 +83,19 @@ pub struct ConfigFileInfo {
     pub exists: bool,
     pub content: String,
 }
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct EnvAuditItem {
+    pub key: String,
+    pub is_set: bool,
+    pub is_empty: bool,
+    pub default_value: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct EnvAuditReport {
+    pub example_file_found: bool,
+    pub example_file_path: Option<String>,
+    pub items: Vec<EnvAuditItem>,
+    pub missing_count: usize,
+}

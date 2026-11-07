@@ -338,6 +338,58 @@ impl MiseCli {
             stdout.to_string()
         })
     }
+
+    pub fn audit_env_template(workspace: Option<&str>) -> Result<crate::models::EnvAuditReport, String> {
+        let dir = workspace.unwrap_or(".");
+        let candidates = [
+            format!("{}/.env.example", dir),
+            format!("{}/.env.template", dir),
+            format!("{}/env.example", dir),
+        ];
+
+        let example_file = candidates.iter().find(|p| Path::new(p).exists()).cloned();
+        let env_map = Self::get_env(workspace).unwrap_or_default();
+
+        let mut items = Vec::new();
+        let mut missing_count = 0;
+
+        if let Some(ref path) = example_file {
+            if let Ok(content) = std::fs::read_to_string(path) {
+                for line in content.lines() {
+                    let trimmed = line.trim();
+                    if trimmed.is_empty() || trimmed.starts_with('#') {
+                        continue;
+                    }
+                    if let Some((k, v)) = trimmed.split_once('=') {
+                        let key = k.trim().to_string();
+                        let def_val = v.trim().trim_matches('"').trim_matches('\'').to_string();
+
+                        let is_set = env_map.contains_key(&key);
+                        let val = env_map.get(&key).map(|s| s.as_str()).unwrap_or("");
+                        let is_empty = val.trim().is_empty();
+
+                        if !is_set || is_empty {
+                            missing_count += 1;
+                        }
+
+                        items.push(crate::models::EnvAuditItem {
+                            key,
+                            is_set,
+                            is_empty,
+                            default_value: if def_val.is_empty() { None } else { Some(def_val) },
+                        });
+                    }
+                }
+            }
+        }
+
+        Ok(crate::models::EnvAuditReport {
+            example_file_found: example_file.is_some(),
+            example_file_path: example_file,
+            items,
+            missing_count,
+        })
+    }
 }
 
 #[cfg(test)]

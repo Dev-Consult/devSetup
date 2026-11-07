@@ -125,7 +125,7 @@ export const useMiseStore = create<MiseState>((set, get) => ({
 				presets: presetsRes,
 				envVars: envRes,
 				pathDiag: pathRes,
-				registryTools: regRes.slice(0, 50),
+				registryTools: regRes,
 				syncStatus: syncRes,
 				configFiles: configsRes,
 			});

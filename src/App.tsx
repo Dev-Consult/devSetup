@@ -132,7 +132,9 @@ export default function App() {
 						<ToolsTab onOpenSwitcher={(tool) => setSwitchingTool(tool)} />
 					)}
 					{activeTab === "env" && <EnvTab />}
-					{activeTab === "registry" && <RegistryTab />}
+					{activeTab === "registry" && (
+						<RegistryTab onOpenSwitcher={(tool) => setSwitchingTool(tool)} />
+					)}
 					{activeTab === "config" && <ConfigEditorTab />}
 				</div>
 

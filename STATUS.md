@@ -19,6 +19,7 @@ Last Updated: 2026-11-07
 - [x] **.env.example Compliance Audit**: Audits workspace `.env.example` vs active environment with 1-click populate to `.mise.local.toml`.
 - [x] **Unified Mise Task Runner**: Replaced Makefile with native `.mise.toml` task automation.
 - [x] **AI Agent Friendly Ecosystem**: Added `AGENTS.md`, `STATUS.md`, and `.agentignore`.
+- [x] **Full Desktop Binary CI Compilation**: Automated `pnpm tauri build` in GitHub Actions generating 85MB release artifacts (.deb, .AppImage, binary) on every push to main.
 
 ---
 

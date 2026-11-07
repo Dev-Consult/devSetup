@@ -1,0 +1,8 @@
+# Files that AI agents should avoid reading in full to conserve token budget
+dist/
+src-tauri/target/
+node_modules/
+.git/
+pnpm-lock.yaml
+src/data/registry.json
+*.log

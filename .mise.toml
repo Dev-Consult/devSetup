@@ -1,0 +1,43 @@
+# .mise.toml - Project Toolchain & Task Automation
+[tools]
+node = "24.13.0"
+rust = "1.99.1"
+
+[tasks.dev]
+description = "Start Vite frontend dev server"
+run = "pnpm dev"
+
+[tasks.build]
+description = "Typecheck TypeScript and compile Vite frontend"
+run = "pnpm tsc && pnpm vite build"
+
+[tasks.lint]
+description = "Check linting and formatting with Biome"
+run = "pnpm biome check ."
+
+[tasks."lint:fix"]
+description = "Automatically fix linting and formatting issues"
+run = "pnpm biome check --write ."
+
+[tasks.clippy]
+description = "Run Rust Clippy linter with strict zero-warning policy"
+dir = "src-tauri"
+run = "cargo clippy -- -D warnings"
+
+[tasks."test:ui"]
+description = "Run Vitest component and store unit tests"
+run = "pnpm vitest run"
+
+[tasks."test:rs"]
+description = "Run Rust backend unit tests (with Clippy pre-check)"
+dir = "src-tauri"
+depends = ["clippy"]
+run = "cargo test"
+
+[tasks.test]
+description = "Run all unit tests (UI + Rust)"
+depends = ["test:ui", "test:rs"]
+
+[tasks.verify]
+description = "Single-command full verification (lint, build, clippy, tests)"
+depends = ["lint", "build", "test"]

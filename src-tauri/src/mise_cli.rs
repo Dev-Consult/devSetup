@@ -353,32 +353,30 @@ impl MiseCli {
         let mut items = Vec::new();
         let mut missing_count = 0;
 
-        if let Some(ref path) = example_file {
-            if let Ok(content) = std::fs::read_to_string(path) {
-                for line in content.lines() {
-                    let trimmed = line.trim();
-                    if trimmed.is_empty() || trimmed.starts_with('#') {
-                        continue;
+        if let Some(content) = example_file.as_ref().and_then(|p| std::fs::read_to_string(p).ok()) {
+            for line in content.lines() {
+                let trimmed = line.trim();
+                if trimmed.is_empty() || trimmed.starts_with('#') {
+                    continue;
+                }
+                if let Some((k, v)) = trimmed.split_once('=') {
+                    let key = k.trim().to_string();
+                    let def_val = v.trim().trim_matches('"').trim_matches('\'').to_string();
+
+                    let is_set = env_map.contains_key(&key);
+                    let val = env_map.get(&key).map(|s| s.as_str()).unwrap_or("");
+                    let is_empty = val.trim().is_empty();
+
+                    if !is_set || is_empty {
+                        missing_count += 1;
                     }
-                    if let Some((k, v)) = trimmed.split_once('=') {
-                        let key = k.trim().to_string();
-                        let def_val = v.trim().trim_matches('"').trim_matches('\'').to_string();
 
-                        let is_set = env_map.contains_key(&key);
-                        let val = env_map.get(&key).map(|s| s.as_str()).unwrap_or("");
-                        let is_empty = val.trim().is_empty();
-
-                        if !is_set || is_empty {
-                            missing_count += 1;
-                        }
-
-                        items.push(crate::models::EnvAuditItem {
-                            key,
-                            is_set,
-                            is_empty,
-                            default_value: if def_val.is_empty() { None } else { Some(def_val) },
-                        });
-                    }
+                    items.push(crate::models::EnvAuditItem {
+                        key,
+                        is_set,
+                        is_empty,
+                        default_value: if def_val.is_empty() { None } else { Some(def_val) },
+                    });
                 }
             }
         }

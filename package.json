@@ -14,6 +14,7 @@
 		"test:rs": "cd src-tauri && cargo test",
 		"test": "pnpm test:ui && pnpm test:rs",
 		"clippy": "cd src-tauri && cargo clippy -- -D warnings",
+		"verify": "pnpm build && pnpm lint && pnpm test && pnpm clippy",
 		"preview": "vite preview",
 		"tauri": "tauri"
 	},

@@ -18,6 +18,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libdbus-1-dev
 
+      - name: Install mise CLI
+        uses: jdx/mise-action@v2
+        with:
+          install: true
+          cache: false
+
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
         with:

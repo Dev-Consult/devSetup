@@ -3,6 +3,7 @@ import {
 	api,
 	type ConfigFileInfo,
 	type DiagnosticReport,
+	type EnvAuditReport,
 	type InstalledToolsMap,
 	type PathDiagnostic,
 	type ProjectSyncStatus,
@@ -36,6 +37,7 @@ interface MiseState {
 	registryTools: RegistryTool[];
 	syncStatus: ProjectSyncStatus | null;
 	configFiles: ConfigFileInfo[];
+	envAudit: EnvAuditReport | null;
 
 	// Diagnostics
 	diagTool: string;
@@ -52,6 +54,7 @@ interface MiseState {
 
 	// Actions
 	loadData: () => Promise<void>;
+	populateMissingEnv: () => Promise<void>;
 	applyPreset: (preset: RegistryPreset, token?: string) => Promise<void>;
 	syncProject: () => Promise<void>;
 	installTool: (tool: string, version: string) => Promise<void>;
@@ -77,6 +80,7 @@ export const useMiseStore = create<MiseState>((set, get) => ({
 	registryTools: [],
 	syncStatus: null,
 	configFiles: [],
+	envAudit: null,
 
 	diagTool: "npm",
 	setDiagTool: (tool) => set({ diagTool: tool }),
@@ -110,6 +114,7 @@ export const useMiseStore = create<MiseState>((set, get) => ({
 				regRes,
 				syncRes,
 				configsRes,
+				auditRes,
 			] = await Promise.all([
 				api.getInstalledTools(wsParam),
 				api.getPresets(),
@@ -118,6 +123,7 @@ export const useMiseStore = create<MiseState>((set, get) => ({
 				api.getRegistry(),
 				api.checkProjectDrift(wsParam),
 				api.getConfigFiles(wsParam),
+				api.auditEnvTemplate(wsParam),
 			]);
 
 			set({
@@ -128,11 +134,35 @@ export const useMiseStore = create<MiseState>((set, get) => ({
 				registryTools: regRes,
 				syncStatus: syncRes,
 				configFiles: configsRes,
+				envAudit: auditRes,
 			});
 			addLog(`Refreshed data for ${workspace} scope.`);
 		} catch (err) {
 			console.error(err);
 			addLog(`Failed to load data: ${err}`);
+		} finally {
+			set({ loading: false });
+		}
+	},
+
+	populateMissingEnv: async () => {
+		const { envAudit, addLog, loadData } = get();
+		if (!envAudit || envAudit.items.length === 0) return;
+		set({ loading: true });
+		try {
+			const missing = envAudit.items.filter((i) => !i.is_set || i.is_empty);
+			let tomlSnippet = "\n[env]\n# Populated from .env.example\n";
+			for (const m of missing) {
+				tomlSnippet += `${m.key} = "${m.default_value || ""}"\n`;
+			}
+			const wsPath = "/home/daniel/dev/mise-gui/.mise.local.toml";
+			await api.saveConfig(wsPath, tomlSnippet);
+			addLog(
+				`Populated ${missing.length} missing environment variables to .mise.local.toml`,
+			);
+			await loadData();
+		} catch (err) {
+			console.error(err);
 		} finally {
 			set({ loading: false });
 		}

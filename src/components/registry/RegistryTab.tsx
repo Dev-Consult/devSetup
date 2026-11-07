@@ -1,10 +1,12 @@
 import { Check, Download, Flame, Layers, Search } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useMiseStore } from "../../store/useMiseStore";
 
 interface Props {
 	onOpenSwitcher: (tool: string) => void;
 }
+
+const PAGE_SIZE = 24;
 
 export function RegistryTab({ onOpenSwitcher }: Props) {
 	const { registryTools, tools } = useMiseStore();
@@ -12,6 +14,10 @@ export function RegistryTab({ onOpenSwitcher }: Props) {
 	const [selectedCategory, setSelectedCategory] = useState<
 		"all" | "core" | "aqua" | "asdf" | "installed"
 	>("all");
+	const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+	const [prevFilterKey, setPrevFilterKey] = useState("all:");
+
+	const sentinelRef = useRef<HTMLDivElement | null>(null);
 
 	// Featured developer essentials
 	const featuredTools = [
@@ -74,6 +80,37 @@ export function RegistryTab({ onOpenSwitcher }: Props) {
 			return true;
 		});
 	}, [registryTools, tools, searchQuery, selectedCategory]);
+
+	// Reset pagination on search or category change during render (standard React pattern)
+	const currentFilterKey = `${selectedCategory}:${searchQuery}`;
+	if (prevFilterKey !== currentFilterKey) {
+		setPrevFilterKey(currentFilterKey);
+		setVisibleCount(PAGE_SIZE);
+	}
+
+	// Incremental scroll loader (Infinite Scroll via IntersectionObserver)
+	useEffect(() => {
+		const sentinel = sentinelRef.current;
+		if (!sentinel) return;
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				if (entries[0]?.isIntersecting) {
+					setVisibleCount((prev) =>
+						Math.min(prev + PAGE_SIZE, filteredTools.length),
+					);
+				}
+			},
+			{ rootMargin: "200px" },
+		);
+
+		observer.observe(sentinel);
+		return () => observer.disconnect();
+	}, [filteredTools.length]);
+
+	const displayedTools = useMemo(() => {
+		return filteredTools.slice(0, visibleCount);
+	}, [filteredTools, visibleCount]);
 
 	const getBackendColor = (backend: string) => {
 		switch (backend) {
@@ -244,6 +281,21 @@ export function RegistryTab({ onOpenSwitcher }: Props) {
 				</button>
 			</div>
 
+			{/* Status Bar: Showing X of Y */}
+			<div className="flex items-center justify-between text-xs text-gray-400 px-1">
+				<span>
+					Showing{" "}
+					<strong className="text-gray-200">{displayedTools.length}</strong> of{" "}
+					<strong className="text-gray-200">{filteredTools.length}</strong>{" "}
+					matches
+				</span>
+				{visibleCount < filteredTools.length && (
+					<span className="text-[11px] text-gray-500">
+						Scroll down to load more automatically
+					</span>
+				)}
+			</div>
+
 			{/* Main Grid of Filtered Tools */}
 			{filteredTools.length === 0 ? (
 				<div className="py-12 text-center bg-[#10131d] border border-[#1e2333] rounded-2xl p-8 space-y-2">
@@ -256,79 +308,102 @@ export function RegistryTab({ onOpenSwitcher }: Props) {
 					</p>
 				</div>
 			) : (
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
-					{filteredTools.map((tool) => {
-						const installedInfo = tools[tool.name];
-						const isInstalled = !!installedInfo;
-						const activeVer =
-							installedInfo?.find((v) => v.active) || installedInfo?.[0];
+				<>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+						{displayedTools.map((tool) => {
+							const installedInfo = tools[tool.name];
+							const isInstalled = !!installedInfo;
+							const activeVer =
+								installedInfo?.find((v) => v.active) || installedInfo?.[0];
 
-						return (
-							<div
-								key={tool.name}
-								className="bg-[#121622] border border-[#20273a] hover:border-[#2f3954] rounded-xl p-4 flex flex-col justify-between transition-all space-y-3"
-							>
-								<div>
-									<div className="flex items-center justify-between mb-1.5">
-										<h3 className="font-semibold text-white capitalize text-sm tracking-wide">
-											{tool.name}
-										</h3>
-										<span
-											className={`text-[10px] font-mono px-2 py-0.5 rounded border ${getBackendColor(
-												tool.backend,
-											)}`}
-										>
-											{tool.backend}
-										</span>
-									</div>
-
-									<p className="text-[11px] text-gray-400 font-mono truncate bg-[#0a0c12] px-2 py-1 rounded border border-[#1b2030]">
-										{tool.full_name}
-									</p>
-
-									{tool.description && (
-										<p className="text-xs text-gray-400 mt-2 line-clamp-2 leading-relaxed">
-											{tool.description}
-										</p>
-									)}
-								</div>
-
-								<div className="pt-3 border-t border-[#1b2131] flex items-center justify-between">
+							return (
+								<div
+									key={tool.name}
+									className="bg-[#121622] border border-[#20273a] hover:border-[#2f3954] rounded-xl p-4 flex flex-col justify-between transition-all space-y-3"
+								>
 									<div>
-										{isInstalled ? (
-											<span className="inline-flex items-center space-x-1 text-[11px] font-semibold text-emerald-400 font-mono">
-												<span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1" />
-												<span>v{activeVer?.version || "installed"}</span>
+										<div className="flex items-center justify-between mb-1.5">
+											<h3 className="font-semibold text-white capitalize text-sm tracking-wide">
+												{tool.name}
+											</h3>
+											<span
+												className={`text-[10px] font-mono px-2 py-0.5 rounded border ${getBackendColor(
+													tool.backend,
+												)}`}
+											>
+												{tool.backend}
 											</span>
-										) : (
-											<span className="text-[11px] text-gray-500">
-												Available
-											</span>
+										</div>
+
+										<p className="text-[11px] text-gray-400 font-mono truncate bg-[#0a0c12] px-2 py-1 rounded border border-[#1b2030]">
+											{tool.full_name}
+										</p>
+
+										{tool.description && (
+											<p className="text-xs text-gray-400 mt-2 line-clamp-2 leading-relaxed">
+												{tool.description}
+											</p>
 										)}
 									</div>
 
-									<button
-										onClick={() => onOpenSwitcher(tool.name)}
-										className={`flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
-											isInstalled
-												? "bg-[#181f2f] hover:bg-[#222b40] text-gray-200 border border-[#263147]"
-												: "bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/30"
-										}`}
-									>
-										{isInstalled ? (
-											<span>Manage</span>
-										) : (
-											<>
-												<Download className="w-3.5 h-3.5 mr-0.5" />
-												<span>Install</span>
-											</>
-										)}
-									</button>
+									<div className="pt-3 border-t border-[#1b2131] flex items-center justify-between">
+										<div>
+											{isInstalled ? (
+												<span className="inline-flex items-center space-x-1 text-[11px] font-semibold text-emerald-400 font-mono">
+													<span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1" />
+													<span>v{activeVer?.version || "installed"}</span>
+												</span>
+											) : (
+												<span className="text-[11px] text-gray-500">
+													Available
+												</span>
+											)}
+										</div>
+
+										<button
+											onClick={() => onOpenSwitcher(tool.name)}
+											className={`flex items-center space-x-1 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+												isInstalled
+													? "bg-[#181f2f] hover:bg-[#222b40] text-gray-200 border border-[#263147]"
+													: "bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-600/30"
+											}`}
+										>
+											{isInstalled ? (
+												<span>Manage</span>
+											) : (
+												<>
+													<Download className="w-3.5 h-3.5 mr-0.5" />
+													<span>Install</span>
+												</>
+											)}
+										</button>
+									</div>
 								</div>
-							</div>
-						);
-					})}
-				</div>
+							);
+						})}
+					</div>
+
+					{/* Infinite Scroll Sentinel / Load More Footer */}
+					{visibleCount < filteredTools.length && (
+						<div
+							ref={sentinelRef}
+							className="py-6 flex flex-col sm:flex-row items-center justify-center gap-3 text-xs text-gray-400"
+						>
+							<span className="animate-pulse">Loading more tools...</span>
+							<button
+								onClick={() =>
+									setVisibleCount((prev) =>
+										Math.min(prev + PAGE_SIZE, filteredTools.length),
+									)
+								}
+								className="px-3 py-1.5 bg-[#171c2b] hover:bg-[#222a40] text-indigo-300 border border-[#2b354f] rounded-lg transition-colors font-medium"
+							>
+								Load next{" "}
+								{Math.min(PAGE_SIZE, filteredTools.length - visibleCount)}
+							</button>
+						</div>
+					)}
+				</>
 			)}
 		</div>
 	);

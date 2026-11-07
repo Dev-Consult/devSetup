@@ -16,7 +16,7 @@ jobs:
       - name: Install Linux build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libdbus-1-dev
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libdbus-1-dev libfuse2
 
       - name: Install mise CLI
         uses: jdx/mise-action@v2
@@ -65,3 +65,16 @@ jobs:
           rustup component add clippy || true
           cd src-tauri
           cargo clippy -- -D warnings
+
+      - name: Build Desktop Application Binary
+        run: pnpm tauri build
+
+      - name: Upload Desktop Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mise-desktop-linux-x86_64
+          path: |
+            src-tauri/target/release/bundle/deb/*.deb
+            src-tauri/target/release/bundle/appimage/*.AppImage
+            src-tauri/target/release/tauri-app
+          if-no-files-found: warn

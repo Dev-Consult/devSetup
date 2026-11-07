@@ -38,6 +38,10 @@ run = "cargo test"
 description = "Run all unit tests (UI + Rust)"
 depends = ["test:ui", "test:rs"]
 
+[tasks."tauri:build"]
+description = "Compile native desktop application binary and installer package"
+run = "pnpm tauri build"
+
 [tasks.verify]
 description = "Single-command full verification (lint, build, clippy, tests)"
 depends = ["lint", "build", "test"]

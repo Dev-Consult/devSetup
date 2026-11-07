@@ -29,6 +29,9 @@ jobs:
         with:
           components: clippy
 
+      - name: Ensure clippy is installed
+        run: rustup component add clippy || true
+
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -59,5 +62,6 @@ jobs:
 
       - name: Run Clippy
         run: |
+          rustup component add clippy || true
           cd src-tauri
           cargo clippy -- -D warnings
